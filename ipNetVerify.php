@@ -1,10 +1,12 @@
 <?php
+include 'include/analyticstracking.php';
 $release_level = "1";
 $slice = 0;
 $octet3;
 $octet4;
 $ip = "test";
 $networkLocation = "not UCSF";
+
 
 if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
     $ip = $_SERVER['HTTP_CLIENT_IP'];
@@ -13,6 +15,8 @@ if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
 } else {
     $ip = $_SERVER['REMOTE_ADDR'];
 }
+
+
 //$ip = '169.230.243.74';
 //$ip = '64.54.101.82';
 //$ip = '10.7.186.158';

@@ -1,5 +1,6 @@
 <?php
 require_once 'vendor/autoload.php';
+include 'include/analyticstracking.php';
 if (!empty($_POST['EmailAddress'])) {
 
     $config = parse_ini_file("conf/config.ini");

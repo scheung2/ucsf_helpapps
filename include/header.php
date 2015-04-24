@@ -1,16 +1,8 @@
-<?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-?>
-
 <html>
 
     <head>
         <link type="text/css" rel="stylesheet" href="css/main.css">
+        <title>help@ucsf.edu </title>
         <style>
             .wrapper{
                 background-color: #B3B9BF;
@@ -23,6 +15,7 @@
                 padding-left:15px;
                 font-family: 'HelveticaNeueLTStd',arial, sans-serif;
                 padding-right:15px;
+                
             }
             .footer{
                 position: relative;
@@ -50,6 +43,9 @@
                 border-bottom: 1px #fff solid;
             }
 
+            .text-input, textarea {
+                padding: .3em 0em;
+            }
         </style>
     </head>
     <body  class="wrapper">
