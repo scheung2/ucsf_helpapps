@@ -33,7 +33,7 @@ include 'include/header.php';
 <div class="row row--demo">
     <div class="columns three"> </div>
     <div class="columns six">
-
+        <a href="index.php"><h3>UCSF HelpApps</h3></a>
         <form action="" method="post" name="EmailHelperForm">
             <p>&nbsp;</p>
             <p>&nbsp;</p>
