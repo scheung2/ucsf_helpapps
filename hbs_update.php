@@ -181,6 +181,7 @@ include 'include/header.php'
 
 <?php if ($validate === FALSE) { ?>
     <div class="row row--demo">
+        <a href="index.php"><h3>UCSF HelpApps</h3></a>
         <h2>Campus HBS Update Form</h2>
 
         <noscript>
@@ -199,38 +200,24 @@ include 'include/header.php'
                 $("#grace").click(function () {
                     $("#A").toggle();
                 });
-            });
-            $(document).ready(function () {
                 $("#adjustLeave").click(function () {
                     $("#B").toggle();
                 });
-            });
-            $(document).ready(function () {
                 $("#adjustMonths").click(function () {
                     $("#C").toggle();
                 });
-            });
-            $(document).ready(function () {
                 $("#grandfathered").click(function () {
                     $("#D").toggle();
                 });
-            });
-            $(document).ready(function () {
                 $("#overrideVaction").click(function () {
                     $("#E").toggle();
                 });
-            });
-            $(document).ready(function () {
                 $("#changeManagement").click(function () {
                     $("#F").toggle();
                 });
-            });
-            $(document).ready(function () {
                 $("#unRestricted_Time").click(function () {
                     $("#G").toggle();
                 });
-            });
-            $(document).ready(function () {
                 $("#autoPopulation_Time").click(function () {
                     $("#H").toggle();
                 });
@@ -239,7 +226,8 @@ include 'include/header.php'
 
         <script type="text/JavaScript">
             function MM_findObj(n, d) { //v4.01
-            var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+            var p,i,x;  if(!d) 
+                d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
             d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
             if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
             for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
@@ -322,7 +310,7 @@ include 'include/header.php'
         <form action="" method="post" name="form1" onSubmit="MM_validateForm('adminName', '', 'R', 'adminPhone', '', 'R', 'adminEmail', '', 'RisEmail', 'employeeName', '', 'R', 'employeeID', '', 'R', 'employeeManagementGroup', '', 'R');
                     return document.MM_returnValue">
             <div class="row row--demo">
-                <div class="columns twelve twelve--phone"><b>HBS HR ADMIN INFORMATION</b></div>
+                <div class="columns twelve twelve--phone bold">HBS HR ADMIN INFORMATION</div>
             </div>
             <div class="row row--demo">
                 <div class="columns four four--phone">Name<input autofocus class="text-input" type="text" name="adminName"></div>
@@ -379,7 +367,7 @@ include 'include/header.php'
             <p>Note: Items G and H only apply to Bi-Weekly employees.</p>
             <p>&nbsp;</p>
             <div class="row row--demo">
-                <div class="columns twelve twelve--phone"><b>EMPLOYEE INFORMATION</b></div>
+                <div class="columns twelve twelve--phone bold">EMPLOYEE INFORMATION</div>
             </div>
             <div class="row row--demo">
                 <div class="columns four four--phone">Name<input class="text-input" type="text" name="employeeName"></div>
@@ -404,8 +392,8 @@ include 'include/header.php'
             </div>
             <p>&nbsp;</p>
 
-            <div class="row row--demo" id="A" style="display:none;">
-                <div class="columns twelve twelve--phone"><b>A. Provide a Grace Period for Vacation Maximum</b></div>
+            <div class="row row--demo hide" id="A">
+                <div class="columns twelve twelve--phone bold">A. Provide a Grace Period for Vacation Maximum</div>
 
                 <div class="columns six six--phone">Bargaining Unit</div>
                 <div class="columns six six--phone">
@@ -425,9 +413,9 @@ include 'include/header.php'
             </div>
             <p>&nbsp;</p>
 
-            <div id="B" style="display:none;">
+            <div class="hide" id="B">
                 <div class="row row--demo">
-                    <div class="columns twelve twelve--phone"><b>B. Adjust Leave Balances</b></div>
+                    <div class="columns twelve twelve--phone bold">B. Adjust Leave Balances</div>
                     <div class="columns two two--phone">Leave Type</div>
                     <div class="columns two two--phone">Type of Adjustment</div>
                     <div class="columns two two--phone">Effective Date (MM/DD/YYYY)</div>
@@ -530,9 +518,9 @@ include 'include/header.php'
                 <p>&nbsp;</p>
             </div>
 
-            <div id="C" style="display:none;">
+            <div class="hide" id="C">
                 <div class="row row--demo">
-                    <div class="columns twelve twelve--phone"><b>C. Adjust Months of Service</b></div>
+                    <div class="columns twelve twelve--phone bold">C. Adjust Months of Service</div>
                     <div class="columns three three--phone">Effective Date (MM/DD/YYYY)</div>
                     <div class="columns three three--phone"># of Months</div>
                     <div class="columns three three--phone">Reason(MM/DD/YYYY)</div>
@@ -562,18 +550,18 @@ include 'include/header.php'
                 <p>&nbsp;</p>
             </div>
 
-            <div id="D" style="display:none;">
+            <div class="hide" id="D">
                 <div class="row row--demo">
-                    <div class="columns twelve twelve--phone"><b>D. End Grandfathered Status</b></div>
+                    <div class="columns twelve twelve--phone bold">D. End Grandfathered Status</div>
                     <div class="columns four four--phone">End Date (MM/DD/YYYY)</div>
                     <div class="columns eight eight--phone"><input class="text-input" name="dateEndGrandfathered" type="text" id="dateEndGrandfathered"></div>
                 </div>
                 <p>&nbsp;</p>
             </div>
 
-            <div id="E" style="display:none;">
+            <div class="hide" id="E">
                 <div class="row row--demo">
-                    <div class="columns twelve twelve--phone"><b>E. Override Vacation Eligibility</b></div>
+                    <div class="columns twelve twelve--phone bold">E. Override Vacation Eligibility</div>
                     <div class="columns four four--phone">Date From (MM/DD/YYYY)</div>
                     <div class="columns four four--phone">Date To (MM/DD/YYYY)</div>
                     <div class="columns four four--phone">Eligibility Status (MM/DD/YYYY)</div>
@@ -586,25 +574,25 @@ include 'include/header.php'
                             <option>Ineligible</option>
                         </select>
                     </div>
-                    <div class="columns twelve twelve--phone"><b>Reason</b></div>
+                    <div class="columns twelve twelve--phone bold">Reason</div>
                     <div class="columns twelve twelve--phone"><textarea name="vacationOverrideReason" cols="5" rows="5" id="comments"></textarea></div>
                 </div>
                 <p>Note: Dates must be month end dates.</p>
                 <p>&nbsp;</p>
             </div>
 
-            <div id="F" style="display:none;">
+            <div class="hide" id="F">
                 <div class="row row--demo">
-                    <div class="columns twelve twelve--phone"><b>F. Change Management Group</b></div>
+                    <div class="columns twelve twelve--phone bold">F. Change Management Group</div>
                     <div class="columns four four--phone">New Management Group # </div>
                     <div class="columns eight eight--phone"><input class="text-input" name="managementGroupNumber" type="text" id="managementGroupNumber"></div>
                 </div>
                 <p>&nbsp;</p>
             </div>
 
-            <div id="G" style="display:none;">
+            <div class="hide" id="G">
                 <div class="row row--demo">
-                    <div class="columns twelve twelve--phone"><b>G. Assign/Remove Non-Exempt Unrestricted Timesheet</b></div>
+                    <div class="columns twelve twelve--phone bold">G. Assign/Remove Non-Exempt Unrestricted Timesheet</div>
                     <div class="columns four four--phone">Request</div>
                     <div class="columns eight eight--phone">
                         <select name="unResTimeRequest" id="unResTimeRequest">
@@ -617,9 +605,9 @@ include 'include/header.php'
                 <p>&nbsp;</p>
             </div>
 
-            <div id="H" style="display:none;">
+            <div class="hide" id="H">
                 <div class="row row--demo">
-                    <div class="columns twelve twelve--phone"><b>H. Assign/Remove Auto-Population of Timesheet</b></div>
+                    <div class="columns twelve twelve--phone bold">H. Assign/Remove Auto-Population of Timesheet</div>
                     <div class="columns four four--phone">Request</div>
                     <div class="columns eight four--phone">
                         <select name="autoPopTimeRequest" id="autoPopTimeRequest">
@@ -633,7 +621,7 @@ include 'include/header.php'
             </div>
 
             <div class="row row--demo">
-                <div class="columns twelve twelve--phone"><b>Comments</b></div>
+                <div class="columns twelve twelve--phone bold">Comments</div>
                 <div class="columns twelve twelve--phone"><textarea name="comments" cols="5" rows="5" id="comments"></textarea></div>
             </div>
 

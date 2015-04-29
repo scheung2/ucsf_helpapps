@@ -1,23 +1,29 @@
 <?php
 include 'include/header.php';
+include 'include/analyticstracking.php';
 ?>
+<style>
+    td:hover{
+        text-decoration: underline;
+    }
+</style>
 <div class="row row--demo">
-    <div class="columns three"> </div>
-    <div class="columns six">
-        <h2>UCSF HelpApps</h2>
+    <div class="columns three three--phone"> </div>
+    <div class="columns six six--phone">
+        <a href="index.php"><h2>UCSF HelpApps</h2></a>
         <table class="table table--bordered">
             <tbody>
                 <tr>
-                    <td><div onclick="location.href='EmailHelper.php';">EmailHelper</div></td>
+                    <td><div><a href="EmailHelper.php">Retrieve User ID</a></div></td>
                 </tr>
                 <tr>
-                    <td><div onclick="location.href='hbs_access.php';">hbs_access</div></td>
+                    <td><div><a href="hbs_access.php">Request HBS Access</a></div></td>
                 </tr>
                 <tr>
-                    <td><div onclick="location.href='hbs_update.php';">hbs_update</div></td>
+                    <td><div><a href="hbs_update.php">Request HBS Update</a></div></td>
                 </tr>
                 <tr>
-                    <td><div onclick="location.href='ipNetVerify.php';">ipNetVerify</div></td>
+                    <td><div><a href="ipNetVerify.php">Verify VPN Access</a></div></td>
                 </tr>
             </tbody>
         </table>

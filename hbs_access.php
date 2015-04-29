@@ -135,6 +135,7 @@ include 'include/header.php';
 <?php if ($validate === FALSE) { ?>
 
     <div class="row row--demo">
+        <a href="index.php"><h3>UCSF HelpApps</h3></a>
         <h2>Campus HBS Access Form</h2>
 
         <!-- ***************************************************************** -->
@@ -154,18 +155,12 @@ include 'include/header.php';
                 $("#approverRoleCheck").click(function () {
                     $("#A").toggle();
                 });
-            });
-            $(document).ready(function () {
                 $("#adminRoleCheck").click(function () {
                     $("#B").toggle();
                 });
-            });
-            $(document).ready(function () {
                 $("#replaceGroupOwnerCheck").click(function () {
                     $("#C").toggle();
                 });
-            });
-            $(document).ready(function () {
                 $("#reportsRoleCheck").click(function () {
                     $("#D").toggle();
                 });
@@ -176,7 +171,8 @@ include 'include/header.php';
             function MM_findObj(n, d) { //v4.01
             var p,i,x;  
 
-            if(!d) d=document; 
+            if(!d) 
+                d=document;
 
             if((p=n.indexOf("?"))>0&&parent.frames.length) {
 
@@ -219,7 +215,7 @@ include 'include/header.php';
                     return document.MM_returnValue">
             <p>This form can only be submitted by the Management Group Owner OR the Access Administrator. Fill in the appropriate section based on your role.</p>
             <div class="row row--demo">
-                <div class="columns twelve twelve--phone"><b>Access Administrator or Management Group Owner Information</b></div>
+                <div class="columns twelve twelve--phone bold">Access Administrator or Management Group Owner Information</div>
             </div>
             <div class="row row--demo">
                 <div class="columns three three--phone">Name<input autofocus class="text-input" type="text" name="adminName"></div>
@@ -229,7 +225,7 @@ include 'include/header.php';
             </div>
             <div class="row row--demo">
                 <div class="columns twelve twelve--phone">I am the
-                
+
                     <select name="requesterType" id="requesterType">
                         <option selected>--select one--</option>
                         <option>Access Administrator</option>
@@ -264,7 +260,7 @@ include 'include/header.php';
 
             <p>&nbsp;</p>
             <div class="row row--demo">
-                <div class="columns twelve twelve--phone"><b>EMPLOYEE INFORMATION</b></div>
+                <div class="columns twelve twelve--phone bold">EMPLOYEE INFORMATION</div>
             </div>
             <div class="row row--demo">
                 <div class="columns four four--phone">Name<input class="text-input" type="text" name="employeeName"></div>
@@ -290,9 +286,9 @@ include 'include/header.php';
             </div>
             <p>&nbsp;</p>
 
-            <div id="A" style="display:none;">
+            <div id="A" class="hide">
                 <div class="row row--demo">
-                    <div class="columns twelve twelve--phone"><b>A. Change to Employee's Approver Role</b></div>
+                    <div class="columns twelve twelve--phone bold">A. Change to Employee's Approver Role</div>
                 </div>
                 <div class="row row--demo">
                     <div class="columns four four--phone">Request</div>
@@ -306,10 +302,10 @@ include 'include/header.php';
                 </div>
             </div>
 
-            <div id="B" style="display:none;">
+            <div id="B" class="hide">
                 <p>&nbsp;</p>
                 <div class="row row--demo">
-                    <div class="columns twelve twelve--phone"><b>B. Change to Employee's HR Admin Role</b></div>
+                    <div class="columns twelve twelve--phone bold">B. Change to Employee's HR Admin Role</div>
                 </div>
                 <div class="row row--demo">
                     <div class="columns four four--phone">Request</div>
@@ -362,9 +358,9 @@ include 'include/header.php';
                 <p>&nbsp;</p>
             </div>
 
-            <div id="C" style="display:none;">
+            <div id="C" class="hide">
                 <div class="row row--demo">
-                    <div class="columns twelve twelve--phone"><b>C. Replace Management Group Owner</b></div>
+                    <div class="columns twelve twelve--phone bold">C. Replace Management Group Owner</div>
                 </div>
                 <div class="row row--demo">
                     <div class="columns six six--phone">New Management Group Owner's Name</div>
@@ -381,9 +377,9 @@ include 'include/header.php';
                 <p>&nbsp;</p>
             </div>
 
-            <div id="D" style="display:none;">
+            <div id="D" class="hide">
                 <div class="row row--demo">
-                    <div class="columns twelve twelve--phone"><b>D. Change to Employee's Reports Role</b></div>
+                    <div class="columns twelve twelve--phone bold">D. Change to Employee's Reports Role</div>
                 </div>
                 <div class="row row--demo">
                     <div class="columns four four--phone">Request</div>
@@ -402,7 +398,7 @@ include 'include/header.php';
             </div>
 
             <div class="row row--demo">
-                <div class="columns twelve twelve--phone"><b>Comments</b></div>
+                <div class="columns twelve twelve--phone bold">Comments</div>
                 <div class="columns twelve twelve--phone">
                     <textarea name="comments" cols="5" rows="5" id="comments"></textarea>
                 </div>
