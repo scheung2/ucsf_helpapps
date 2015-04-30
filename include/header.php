@@ -46,6 +46,14 @@
             .text-input, textarea {
                 padding: .3em 0em;
             }
+            
+            .hide {
+                display: none;
+            }
+            
+            .bold {
+                font-weight: bold;
+            }
         </style>
     </head>
     <body  class="wrapper">
@@ -67,8 +75,10 @@
             <!-- Start Navigation -->
             <header class="nav-bar">
                 <div class="brand-logo"><img src="imgs/UCSF_InfoTechnology_navy_RGB-2.png" height="58" width="227" border="0" hspace="14"></div>
+                
             </header>
             <!--/Site Header (subbrand and navigation)-->
             <!-- Content -->
+            
             
 
