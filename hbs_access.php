@@ -135,7 +135,7 @@ include 'include/header.php';
 <?php if ($validate === FALSE) { ?>
 
     <div class="row row--demo">
-        <a href="index.php"><h3>UCSF HelpApps</h3></a>
+        <a href="index.php"><h4>UCSF Help Applications</h4></a>
         <h2>Campus HBS Access Form</h2>
 
         <!-- ***************************************************************** -->

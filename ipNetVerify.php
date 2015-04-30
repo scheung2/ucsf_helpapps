@@ -104,7 +104,7 @@ include 'include/header.php'
 
 
 <div class="row row--demo">
-    <div class="columns three"><a href="index.php"><h3>UCSF HelpApps</h3></a> </div>
+    <div class="columns three"><a href="index.php"><h4>UCSF Help Applications</h4></a> </div>
     <div class="columns six">
         <p>&nbsp</p>
         <h2>ITS Network Verification</h2>
