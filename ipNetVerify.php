@@ -104,9 +104,9 @@ include 'include/header.php'
 
 
 <div class="row row--demo">
-    <div class="columns three"> </div>
+    <div class="columns three"><a href="index.php"><h3>UCSF HelpApps</h3></a> </div>
     <div class="columns six">
-        <a href="index.php"><h3>UCSF HelpApps</h3></a>
+        <p>&nbsp</p>
         <h2>ITS Network Verification</h2>
         <h3>Test VPN</h3>
         <p>The box below tests whether the Virtual Private Network appears to be working at the time you visited (loaded) this web page.</p>

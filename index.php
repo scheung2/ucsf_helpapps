@@ -10,7 +10,7 @@ include 'include/analyticstracking.php';
 <div class="row row--demo">
     <div class="columns three three--phone"> </div>
     <div class="columns six six--phone">
-        <a href="index.php"><h2>UCSF HelpApps</h2></a>
+        <h2>UCSF Help Applications</h2>
         <table class="table table--bordered">
             <tbody>
                 <tr>
