@@ -1,6 +1,24 @@
 <?php
 require_once 'vendor/autoload.php';
 include 'include/analyticstracking.php';
+
+$privileged_networks[] = "169.230."; //VPN
+//$privileged_networks[] = "127.0.0.1"; //Localhost
+$allowed = FALSE;
+
+foreach ($privileged_networks as $network) {
+    if (strpos($_SERVER['REMOTE_ADDR'], "$network") === 0) {
+        $allowed = TRUE;
+        break;
+    }
+}
+if (!$allowed) {
+    header('HTTP/1.0 403 Forbidden');
+    die('Access denied (HTTP 403). Please login to VPN.' . " <a href='ipNetVerify.php'>Verify VPN Access Here</a>");    
+}
+
+
+
 if (!empty($_POST['EmailAddress'])) {
 
     $config = parse_ini_file("conf/config.ini");
