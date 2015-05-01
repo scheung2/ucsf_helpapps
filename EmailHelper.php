@@ -2,6 +2,12 @@
 require_once 'vendor/autoload.php';
 include 'include/analyticstracking.php';
 
+$privileged_networks = array();
+$privileged_networks[] = "10."; //RFC 1918
+$privileged_networks[] = "64.54."; //UCSF
+$privileged_networks[] = "128.218."; //UCSF
+$privileged_networks[] = "169.230."; //VPN
+$privileged_networks[] = "192.168."; //RFC 1918
 $privileged_networks[] = "169.230."; //VPN
 //$privileged_networks[] = "127.0.0.1"; //Localhost
 $allowed = FALSE;
