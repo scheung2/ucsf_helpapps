@@ -415,6 +415,7 @@ include 'include/header.php';
     </div>
     <?php
 } else {
+    echo "<a href='index.php'><h4>UCSF Help Applications</h4></a>";
     echo "<pre>";
     echo "<h2>Email Sent</h2>\n";
     echo "From: " . $mailFrom . "\n";
