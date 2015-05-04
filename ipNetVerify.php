@@ -108,7 +108,6 @@ include 'include/header.php'
     <div class="columns six">
         <p>&nbsp</p>
         <h2>ITS Network Verification</h2>
-        <h3>Test VPN</h3>
         <p>The box below tests whether the Virtual Private Network appears to be working at the time you visited (loaded) this web page.</p>
 
         <?php if ($release_level === "3") { ?>
