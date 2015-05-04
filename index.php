@@ -14,16 +14,16 @@ include 'include/analyticstracking.php';
         <table class="table table--bordered">
             <tbody>
                 <tr>
-                    <td><div><a href="EmailHelper.php">Retrieve User ID</a></div></td>
+                    <td><a href="EmailHelper.php"><div>Retrieve User ID</div></a></td>
                 </tr>
                 <tr>
-                    <td><div><a href="hbs_access.php">Request HBS Access</a></div></td>
+                    <td><a href="hbs_access.php"><div>Request HBS Access</div></a></td>
                 </tr>
                 <tr>
-                    <td><div><a href="hbs_update.php">Request HBS Update</a></div></td>
+                    <td><a href="hbs_update.php"><div>Request HBS Update</div></a></td>
                 </tr>
                 <tr>
-                    <td><div><a href="ipNetVerify.php">Verify VPN Access</a></div></td>
+                    <td><a href="ipNetVerify.php"><div>Verify VPN Access</div></a></td>
                 </tr>
             </tbody>
         </table>
