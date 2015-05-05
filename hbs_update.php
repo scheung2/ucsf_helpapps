@@ -197,6 +197,12 @@ include 'include/header.php'
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>
             $(document).ready(function () {
+                $('input:checkbox').prop('checked', false);
+            });
+            $(document).ready(function () {
+                $('input:checkbox').prop('checked', false);
+            });
+            $(document).ready(function () {
                 $("#grace").click(function () {
                     $("#A").toggle();
                 });
@@ -523,7 +529,7 @@ include 'include/header.php'
                     <div class="columns twelve twelve--phone bold">C. Adjust Months of Service</div>
                     <div class="columns three three--phone">Effective Date (MM/DD/YYYY)</div>
                     <div class="columns three three--phone"># of Months</div>
-                    <div class="columns three three--phone">Reason(MM/DD/YYYY)</div>
+                    <div class="columns three three--phone">Reason</div>
                     <div class="columns three three--phone">Add/Remove</div>
 
                     <div class="columns three three--phone"><input class="text-input" name="monthsServiceEffectiveDate" type="text" id="monthsServiceEffectiveDate"></div>
@@ -564,7 +570,7 @@ include 'include/header.php'
                     <div class="columns twelve twelve--phone bold">E. Override Vacation Eligibility</div>
                     <div class="columns four four--phone">Date From (MM/DD/YYYY)</div>
                     <div class="columns four four--phone">Date To (MM/DD/YYYY)</div>
-                    <div class="columns four four--phone">Eligibility Status (MM/DD/YYYY)</div>
+                    <div class="columns four four--phone">Eligibility Status</div>
                     <div class="columns four four--phone"><input class="text-input" name="vacationOverrRideStart" type="text" id="vacationOverrRideStart"></div>
                     <div class="columns four four--phone"><input class="text-input" name="vacationOverrRideEnd" type="text" id="vacationOverrRideEnd"></div>
                     <div class="columns four four--phone">
@@ -630,7 +636,8 @@ include 'include/header.php'
 
 
             <input name="validate" type="hidden" id="validate" value="true">
-            <div align="center"><input class="btn btn--primary btn--fix" type="submit" name="Submit" value="Submit Form"> </div>
+            <div class="columns one--phone"><a href='hbs_update.php'><input class="btn btn--primary btn--fix" value="Reset Form"></a></div>
+            <div align="right"><input class="btn btn--primary btn--fix" type="submit" name="Submit" value="Submit Form"> </div>
 
         </form>
     </div>

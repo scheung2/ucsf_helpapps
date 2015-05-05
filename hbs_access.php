@@ -152,6 +152,9 @@ include 'include/header.php';
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>
             $(document).ready(function () {
+                $('input:checkbox').prop('checked', false);
+            });
+            $(document).ready(function () {
                 $("#approverRoleCheck").click(function () {
                     $("#A").toggle();
                 });
@@ -406,10 +409,11 @@ include 'include/header.php';
 
             <p>CERTIFICATION: Submission of this form serves as your electronic signature. It certifies that the request aligns with policy and has been appropriately approved by the employee in accordance with departmental procedures. </p>
             <p>&nbsp;</p>
-            <p>
+            
                 <input name="validate" type="hidden" id="validate" value="true">
-            <div align="center"><input class="btn btn--primary btn--fix" type="submit" name="Submit" value="Submit Form"> </div>
-            </p>
+                <div class="columns one--phone"><a href='hbs_access.php'><input class="btn btn--primary btn--fix" value="Reset Form"></a></div>
+            <div align="right"><input class="btn btn--primary btn--fix" type="submit" name="Submit" value="Submit Form"> </div>
+            
         </form>
         <p>&nbsp;</p>
     </div>
