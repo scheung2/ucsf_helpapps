@@ -233,7 +233,7 @@ include 'include/header.php'
         <script type="text/JavaScript">
             function MM_findObj(n, d) { //v4.01
             var p,i,x;  if(!d) 
-                d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+            d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
             d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
             if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
             for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
@@ -314,7 +314,7 @@ include 'include/header.php'
             }
         </script>
         <form action="" method="post" name="form1" onSubmit="MM_validateForm('adminName', '', 'R', 'adminPhone', '', 'R', 'adminEmail', '', 'RisEmail', 'employeeName', '', 'R', 'employeeID', '', 'R', 'employeeManagementGroup', '', 'R');
-                    return document.MM_returnValue">
+                return document.MM_returnValue">
             <div class="row row--demo">
                 <div class="columns twelve twelve--phone bold">HBS HR ADMIN INFORMATION</div>
             </div>
@@ -423,14 +423,22 @@ include 'include/header.php'
                 <div class="row row--demo">
                     <div class="columns twelve twelve--phone bold">B. Adjust Leave Balances</div>
                     <div class="columns two two--phone">Leave Type</div>
+                    <div class="columns one one--phone">Add/Remove</div>
                     <div class="columns two two--phone">Type of Adjustment</div>
                     <div class="columns two two--phone">Effective Date (MM/DD/YYYY)</div>
                     <div class="columns two two--phone"># of hours to Add/Remove</div>
                     <div class="columns three three--phone">Reason</div>
-                    <div class="columns one one--phone">Add/Remove</div>
                 </div>    
                 <div class="row row--demo">
                     <div class="columns two two--phone">Vacation Leave</div>
+                    <div class="columns one one--phone">
+                        <label class="label-radio">
+                            <input name="AdjVac" type="radio" value="Add Leave">Add
+                        </label>
+                        <label class="label-radio">
+                            <input name="AdjVac" type="radio" value="Remove Leave">Remove
+                        </label>
+                    </div>
                     <div class="columns two two--phone">
                         <select name="AdjustTypeVac" id="AdjustTypeVac">
                             <option value=""> -select- </option>
@@ -452,17 +460,17 @@ include 'include/header.php'
                             <option>Other</option>
                         </select>
                     </div>
-                    <div class="columns one one">
-                        <label class="label-radio">
-                            <input name="AdjVac" type="radio" value="Add Leave">Add
-                        </label>
-                        <label class="label-radio">
-                            <input name="AdjVac" type="radio" value="Remove Leave">Remove
-                        </label>
-                    </div>
                 </div>
                 <div class="row row--demo">
                     <div class="columns two two--phone">Sick Leave</div>
+                    <div class="columns one one--phone">
+                        <label class="label-radio">
+                            <input name="AdjSick" type="radio" value="Add Leave">Add
+                        </label>
+                        <label class="label-radio">
+                            <input name="AdjSick" type="radio" value="Remove Leave">Remove
+                        </label>
+                    </div>
                     <div class="columns two two--phone">
                         <select name="AdjustTypeSick" id="AdjustTypeSick">
                             <option value=""> -select- </option>
@@ -484,17 +492,17 @@ include 'include/header.php'
                             <option>Other</option>
                         </select>
                     </div>
-                    <div class="columns one one--phone">
-                        <label class="label-radio">
-                            <input name="AdjSick" type="radio" value="Add Leave">Add
-                        </label>
-                        <label class="label-radio">
-                            <input name="AdjSick" type="radio" value="Remove Leave">Remove
-                        </label>
-                    </div>
                 </div>
                 <div class="row row--demo">
                     <div class="columns two two--phone">Comp Time</div>
+                    <div class="columns one one--phone">
+                        <label class="label-radio">
+                            <input name="AdjCompTime" type="radio" value="Add Leave">Add
+                        </label>
+                        <label class="label-radio">
+                            <input name="AdjCompTime" type="radio" value="Remove Leave">Remove
+                        </label>
+                    </div>
                     <div class="columns two two--phone">
                         <select name="AdjustCompTime" id="AdjustCompTime">
                             <option value=""> -select- </option>
@@ -511,14 +519,6 @@ include 'include/header.php'
                             <option>Other</option>
                         </select>
                     </div>
-                    <div class="columns one one--phone">
-                        <label class="label-radio">
-                            <input name="AdjCompTime" type="radio" value="Add Leave">Add
-                        </label>
-                        <label class="label-radio">
-                            <input name="AdjCompTime" type="radio" value="Remove Leave">Remove
-                        </label>
-                    </div>
                 </div>
                 <p>Note: If selecting "Other" as the Reason, specify the reason in the comments section.</p>
                 <p>&nbsp;</p>
@@ -527,13 +527,21 @@ include 'include/header.php'
             <div class="hide" id="C">
                 <div class="row row--demo">
                     <div class="columns twelve twelve--phone bold">C. Adjust Months of Service</div>
-                    <div class="columns three three--phone">Effective Date (MM/DD/YYYY)</div>
-                    <div class="columns three three--phone"># of Months</div>
-                    <div class="columns three three--phone">Reason</div>
                     <div class="columns three three--phone">Add/Remove</div>
+                    <div class="columns three three--phone"># of Months</div>
+                    <div class="columns three three--phone">Effective Date (MM/DD/YYYY)</div>
+                    <div class="columns three three--phone">Reason</div>
 
-                    <div class="columns three three--phone"><input class="text-input" name="monthsServiceEffectiveDate" type="text" id="monthsServiceEffectiveDate"></div>
+                    <div class="columns three three--phone">
+                        <label class="label-radio">
+                            <input name="monthsService" type="radio" value="Add Months Service">Add
+                        </label>
+                        <label class="label-radio">
+                            <input name="monthsService" type="radio" value="Remove Months Service">Remove
+                        </label>
+                    </div>
                     <div class="columns three three--phone"><input class="text-input" name="adjustNumberMonths" type="text" id="adjustNumberMonths"></div>
+                    <div class="columns three three--phone"><input class="text-input" name="monthsServiceEffectiveDate" type="text" id="monthsServiceEffectiveDate"></div>
                     <div class="columns three three--phone">
                         <select name="MOSAdjustReason" id="MOSAdjustReason">
                             <option value=""> -select- </option>
@@ -542,14 +550,6 @@ include 'include/header.php'
                             <option>Inaccurate Starting MOS</option>
                             <option>Other</option>
                         </select>
-                    </div>
-                    <div class="columns three three--phone">
-                        <label class="label-radio">
-                            <input name="monthsService" type="radio" value="Add Months Service">Add
-                        </label>
-                        <label class="label-radio">
-                            <input name="monthsService" type="radio" value="Remove Months Service">Remove
-                        </label>
                     </div>
                 </div>
                 <p>Note: If selecting "Other" as the Reason, specify the reason in the comments section.</p>
@@ -636,7 +636,7 @@ include 'include/header.php'
 
 
             <input name="validate" type="hidden" id="validate" value="true">
-            <div class="columns one--phone"><a href='hbs_update.php'><input class="btn btn--primary btn--fix" value="Reset Form"></a></div>
+            <div class="columns one one--phone"><a href='hbs_update.php'><input class="btn btn--primary btn--fix" value="Reset Form"></a></div>
             <div align="right"><input class="btn btn--primary btn--fix" type="submit" name="Submit" value="Submit Form"> </div>
 
         </form>

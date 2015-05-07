@@ -411,9 +411,8 @@ include 'include/header.php';
             <p>&nbsp;</p>
             
                 <input name="validate" type="hidden" id="validate" value="true">
-                <div class="columns one--phone"><a href='hbs_access.php'><input class="btn btn--primary btn--fix" value="Reset Form"></a></div>
+                <div class="columns one one--phone"><a href='hbs_access.php'><input class="btn btn--primary btn--fix" value="Reset Form"></a></div>
             <div align="right"><input class="btn btn--primary btn--fix" type="submit" name="Submit" value="Submit Form"> </div>
-            
         </form>
         <p>&nbsp;</p>
     </div>
