@@ -218,16 +218,16 @@ include 'include/header.php';
                     return document.MM_returnValue">
             <p>This form can only be submitted by the Management Group Owner OR the Access Administrator. Fill in the appropriate section based on your role.</p>
             <div class="row row--demo">
-                <div class="columns twelve bold">Access Administrator or Management Group Owner Information</div>
+                <div class="columns twelve twelve--phone bold">Access Administrator or Management Group Owner Information</div>
             </div>
             <div class="row row--demo">
-                <div class="columns three">Name<input autofocus class="text-input" type="text" name="adminName"></div>
-                <div class="columns three">Phone Number<input class="text-input" type="text" name="adminPhone"></div>
-                <div class="columns three">Email Address<input class="text-input" type="text" name="adminEmail"></div> 
-                <div class="columns three">Department Code<input class="text-input" type="text" name="depCode"></div> 
+                <div class="columns three three--phone">Name<input autofocus class="text-input" type="text" name="adminName"></div>
+                <div class="columns three three--phone">Phone Number<input class="text-input" type="text" name="adminPhone"></div>
+                <div class="columns three three--phone">Email Address<input class="text-input" type="text" name="adminEmail"></div> 
+                <div class="columns three three--phone">Department Code<input class="text-input" type="text" name="depCode"></div> 
             </div>
             <div class="row row--demo">
-                <div class="columns twelve">I am the
+                <div class="columns twelve twelve--phone">I am the
 
                     <select name="requesterType" id="requesterType">
                         <option selected>--select one--</option>
@@ -239,22 +239,22 @@ include 'include/header.php';
             <p>&nbsp;</p>
 
             <div class="row row--demo">
-                <div class="columns three">
+                <div class="columns three three--phone">
                     <label class="label-checkbox">
                         <input name="approverRoleCheck" type="checkbox" id="approverRoleCheck" value="true"/>A. Change the Employee's Approver Role
                     </label>            
                 </div>
-                <div class="columns three">
+                <div class="columns three three--phone">
                     <label class="label-checkbox">
                         <input name="adminRoleCheck" type="checkbox" id="adminRoleCheck" value="true">B. Change to Employee's HR Admin Role
                     </label>
                 </div>
-                <div class="columns three">
+                <div class="columns three three--phone">
                     <label class="label-checkbox">
                         <input name="replaceGroupOwnerCheck" type="checkbox" id="replaceGroupOwnerCheck" value="true">C. Replace Management Group Owner
                     </label>
                 </div>
-                <div class="columns three">
+                <div class="columns three three--phone">
                     <label class="label-checkbox">
                         <input name="reportsRoleCheck" type="checkbox" id="reportsRoleCheck" value="true">D. Change to Employee's Reports Role
                     </label>
@@ -263,23 +263,23 @@ include 'include/header.php';
 
             <p>&nbsp;</p>
             <div class="row row--demo">
-                <div class="columns twelve bold">EMPLOYEE INFORMATION</div>
+                <div class="columns twelve twelve--phone bold">EMPLOYEE INFORMATION</div>
             </div>
             <div class="row row--demo">
-                <div class="columns four">Name<input class="text-input" type="text" name="employeeName"></div>
-                <div class="columns four">Employee ID #<input class="text-input" name="employeeID" type="text"></div>
-                <div class="columns four">Management Group #<input class="text-input" name="employeeManagementGroup" type="text" size="30"></div> 
+                <div class="columns four four--phone">Name<input class="text-input" type="text" name="employeeName"></div>
+                <div class="columns four four--phone">Employee ID #<input class="text-input" name="employeeID" type="text"></div>
+                <div class="columns four four--phone">Management Group #<input class="text-input" name="employeeManagementGroup" type="text" size="30"></div> 
             </div>
             <div class="row row--demo">
-                <div class="columns four">Is this individual a UCSF Employee?</div>
-                <div class="columns eight">
+                <div class="columns four four--phone">Is this individual a UCSF Employee?</div>
+                <div class="columns eight eight--phone">
                     <div class="row row--demo">
-                        <div class="columns four">
+                        <div class="columns four four--phone">
                             <label class="label-radio">
                                 <input name="ucsfEmployee" type="radio" value="UCSF Employee">Yes
                             </label>
                         </div>
-                        <div class="columns four">
+                        <div class="columns four four--phone">
                             <label class="label-radio">
                                 <input name="ucsfEmployee" type="radio" value="Not a UCSF Employee">No
                             </label>
@@ -291,11 +291,11 @@ include 'include/header.php';
 
             <div id="A" class="hide">
                 <div class="row row--demo">
-                    <div class="columns twelve bold">A. Change to Employee's Approver Role</div>
+                    <div class="columns twelve twelve--phone bold">A. Change to Employee's Approver Role</div>
                 </div>
                 <div class="row row--demo">
-                    <div class="columns four">Request</div>
-                    <div class="columns eight">
+                    <div class="columns four four--phone">Request</div>
+                    <div class="columns eight eight--phone">
                         <select name="approverRole" id="approverRole">
                             <option>-select-</option>
                             <option>Allow Approver Role</option>
@@ -308,11 +308,11 @@ include 'include/header.php';
             <div id="B" class="hide">
                 <p>&nbsp;</p>
                 <div class="row row--demo">
-                    <div class="columns twelve bold">B. Change to Employee's HR Admin Role</div>
+                    <div class="columns twelve twelve--phone bold">B. Change to Employee's HR Admin Role</div>
                 </div>
                 <div class="row row--demo">
-                    <div class="columns four">Request</div>
-                    <div class="columns eight">
+                    <div class="columns four four--phone">Request</div>
+                    <div class="columns eight eight--phone">
                         <select name="adminRole" id="AdminRole">
                             <option> -select- </option>
                             <option>Allow HR Admin Role</option>
@@ -321,27 +321,27 @@ include 'include/header.php';
                     </div>
                 </div>
                 <div class="row row--demo">
-                    <div class="columns four">Access Level</div>
-                    <div class="columns eight">Group/Department Number</div>
+                    <div class="columns four four--phone">Access Level</div>
+                    <div class="columns eight eight--phone">Group/Department Number</div>
                 </div>
                 <div class="row row--demo">
-                    <div class="columns four">
+                    <div class="columns four four--phone">
                         <label class="label-checkbox">
                             <input name="ManagementGroupAccess" type="checkbox" id="ManagementGroupAccess" value="true"/>Management Group Access
                         </label>
                     </div>
-                    <div class="columns eight">
+                    <div class="columns eight eight--phone">
                         Management Group # from HBS
                         <input class="text-input" name="ManagementGroup" type="text" id="ManagementGroup">
                     </div>
                 </div>
                 <div class="row row--demo">
-                    <div class="columns four">
+                    <div class="columns four four--phone">
                         <label class="label-checkbox">
                             <input name="DepartmentGroupAccess" type="checkbox" id="DepartmentGroupAccess" value="true"/>Department Plus Access
                         </label>
                     </div>
-                    <div class="columns eight">
+                    <div class="columns eight eight--phone">
                         Department # from Department Hierarchy
                         <input class="text-input" name="DepartmentNum" type="text" id="DepartmentNum">
                     </div>
@@ -363,17 +363,17 @@ include 'include/header.php';
 
             <div id="C" class="hide">
                 <div class="row row--demo">
-                    <div class="columns twelve bold">C. Replace Management Group Owner</div>
+                    <div class="columns twelve twelve--phone bold">C. Replace Management Group Owner</div>
                 </div>
                 <div class="row row--demo">
-                    <div class="columns six">New Management Group Owner's Name</div>
-                    <div class="columns six">Employee ID #</div>
+                    <div class="columns six six--phone">New Management Group Owner's Name</div>
+                    <div class="columns six six--phone">Employee ID #</div>
                 </div>
                 <div class="row row--demo">
-                    <div class="columns six">
+                    <div class="columns six six--phone">
                         <input class="text-input" name="managementGroupName" type="text" id="managementGroupName">
                     </div>
-                    <div class="columns six">
+                    <div class="columns six six--phone">
                         <input class="text-input" name="managementEmployeeID" type="text" id="managementEmployeeID">
                     </div>
                 </div>
@@ -382,27 +382,27 @@ include 'include/header.php';
 
             <div id="D" class="hide">
                 <div class="row row--demo">
-                    <div class="columns twelve bold">D. Change to Employee's Reports Role</div>
+                    <div class="columns twelve twelve--phone bold">D. Change to Employee's Reports Role</div>
                 </div>
                 <div class="row row--demo">
-                    <div class="columns four">Request</div>
-                    <div class="columns eight">Department Number</div>
+                    <div class="columns four four--phone">Request</div>
+                    <div class="columns eight eight--phone">Department Number</div>
                 </div>
                 <div class="row row--demo">
-                    <div class="columns four">
+                    <div class="columns four four--phone">
                         <select name="reportsRole" id="reportsRole">
                             <option value="">-select-</option>
                             <option value="Allow">Allow Reports Role</option>
                             <option value="Remove">Remove Reports Role</option>
                         </select>
                     </div>
-                    <div class="columns eight"><input class="text-input" type="text" name="roleDepartmentNumber" id="roleDepartmentNumber"></div>
+                    <div class="columns eight eight--phone"><input class="text-input" type="text" name="roleDepartmentNumber" id="roleDepartmentNumber"></div>
                 </div>
             </div>
 
             <div class="row row--demo">
-                <div class="columns twelve bold">Comments</div>
-                <div class="columns twelve">
+                <div class="columns twelve twelve--phone bold">Comments</div>
+                <div class="columns twelve twelve--phone">
                     <textarea name="comments" cols="5" rows="5" id="comments"></textarea>
                 </div>
             </div>
@@ -410,9 +410,9 @@ include 'include/header.php';
             <p>CERTIFICATION: Submission of this form serves as your electronic signature. It certifies that the request aligns with policy and has been appropriately approved by the employee in accordance with departmental procedures. </p>
             <p>&nbsp;</p>
             
-            <div class="columns ten"><a href="hbs_access.php" class="btn btn--primary">Reset Form</a></div>
+            <div class="columns ten ten--phone"><a href="hbs_access.php" class="btn btn--primary">Reset Form</a></div>
             <input name="validate" type="hidden" id="validate" value="true">
-            <div class="columns one"><input class="btn btn--primary btn--fix" type="submit" name="Submit" value="Submit Form"> </div>
+            <div class="columns one one--phone"><input class="btn btn--primary btn--fix" type="submit" name="Submit" value="Submit Form"> </div>
         </form>
         <p>&nbsp;</p>
     </div>
