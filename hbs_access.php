@@ -410,8 +410,8 @@ include 'include/header.php';
             <p>CERTIFICATION: Submission of this form serves as your electronic signature. It certifies that the request aligns with policy and has been appropriately approved by the employee in accordance with departmental procedures. </p>
             <p>&nbsp;</p>
             
-                <input name="validate" type="hidden" id="validate" value="true">
-                <div class="columns one one--phone"><a href='hbs_access.php'><input class="btn btn--primary btn--fix" value="Reset Form"></a></div>
+            <div class="columns one one--phone"><input class="btn btn--primary btn--fix" onclick="window.location.href='hbs_access.php'" value="Reset Form"></div>
+            <input name="validate" type="hidden" id="validate" value="true">
             <div align="right"><input class="btn btn--primary btn--fix" type="submit" name="Submit" value="Submit Form"> </div>
         </form>
         <p>&nbsp;</p>
