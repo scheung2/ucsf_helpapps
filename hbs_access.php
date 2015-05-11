@@ -175,7 +175,7 @@ include 'include/header.php';
             var p,i,x;  
 
             if(!d) 
-                d=document;
+            d=document;
 
             if((p=n.indexOf("?"))>0&&parent.frames.length) {
 
@@ -409,7 +409,7 @@ include 'include/header.php';
 
             <p>CERTIFICATION: Submission of this form serves as your electronic signature. It certifies that the request aligns with policy and has been appropriately approved by the employee in accordance with departmental procedures. </p>
             <p>&nbsp;</p>
-            
+
             <div class="columns ten ten--phone"><a href="hbs_access.php" class="btn btn--primary">Reset Form</a></div>
             <input name="validate" type="hidden" id="validate" value="true">
             <div class="columns one one--phone"><input class="btn btn--primary btn--fix" type="submit" name="Submit" value="Submit Form"> </div>
@@ -431,7 +431,16 @@ include 'include/header.php';
 
 include 'include/footer.php';
 ?>
-                
+
+<!--[if IE]>
+<p>This browser is IE.</p>
+
+<p>This browser is not IE.</p>
+<![endif]-->
+
+
+
+
 
 
 
