@@ -636,8 +636,8 @@ include 'include/header.php'
 
 
             <input name="validate" type="hidden" id="validate" value="true">
-            <div class="columns one one--phone"><a href="hbs_update.php" class="btn btn--primary">Reset Form</a></div>
-            <div align="right"><input class="btn btn--primary btn--fix" type="submit" name="Submit" value="Submit Form"> </div>
+            <div class="columns ten ten--phone"><a href="hbs_update.php" class="btn btn--primary">Reset Form</a></div>
+            <div columns one one--phone><input class="btn btn--primary btn--fix" type="submit" name="Submit" value="Submit Form"> </div>
 
         </form>
     </div>
