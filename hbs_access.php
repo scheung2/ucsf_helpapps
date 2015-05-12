@@ -220,13 +220,12 @@ include 'include/header.php';
             <div class="row row--demo">
                 <div class="columns twelve twelve--phone bold">Access Administrator or Management Group Owner Information</div>
             </div>
-            <div class="row row--demo"><!--[if lt IE 9]><span id="four"><p>is this even working?</p><![endif]-->
-                <div class="columns three three--phone">Name<input autofocus class="text-input" type="text" name="adminName"></div>
-                <div class="columns three three--phone">Phone Number<input class="text-input" type="text" name="adminPhone"></div>
-                <div class="columns three three--phone">Email Address<input class="text-input" type="text" name="adminEmail"></div> 
-                <div class="columns three three--phone">Department Code<input class="text-input" type="text" name="depCode"></div> 
+            <div class="row row--demo">
+                <!--[if lt IE 9]><span id="four"><![endif]--><div class="columns three three--phone">Name<input autofocus class="text-input" type="text" name="adminName"></div><!--[if lt IE 9]></span><![endif]-->
+                <!--[if lt IE 9]><span id="four"><![endif]--><div class="columns three three--phone">Phone Number<input class="text-input" type="text" name="adminPhone"></div><!--[if lt IE 9]></span><![endif]-->
+                <!--[if lt IE 9]><span id="four"><![endif]--><div class="columns three three--phone">Email Address<input class="text-input" type="text" name="adminEmail"></div><!--[if lt IE 9]></span><![endif]-->
+                <!--[if lt IE 9]><span id="four"><![endif]--><div class="columns three three--phone">Department Code<input class="text-input" type="text" name="depCode"></div><!--[if lt IE 9]></span><![endif]-->
             </div>
-            <!--[if lt IE 9]></span><![endif]-->
             
             <div class="row row--demo">
                 <div class="columns twelve twelve--phone">I am the
