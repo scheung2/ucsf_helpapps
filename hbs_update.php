@@ -742,7 +742,7 @@ include 'include/header.php'
             <!--[if lt IE 9]><span id="two"><![endif]-->
             <div class="columns ten ten--phone"><a href="hbs_update.php" class="btn btn--primary">Reset Form</a></div>
             <!--[if lt IE 9]></span><![endif]-->
-            <!--[if lt IE 9]><span id="two right"><![endif]-->
+            <!--[if lt IE 9]><span id="two"><![endif]-->
             <div columns one one--phone><input class="btn btn--primary" type="submit" name="Submit" value="Submit Form"> </div>
             <!--[if lt IE 9]></span><![endif]-->
         </form>

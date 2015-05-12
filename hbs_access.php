@@ -445,7 +445,7 @@ include 'include/header.php';
 
             <!--[if lt IE 9]><span id="two"><![endif]--><div class="columns ten ten--phone"><a href="hbs_access.php" class="btn btn--primary">Reset Form</a></div><!--[if lt IE 9]></span><![endif]-->
             <input name="validate" type="hidden" id="validate" value="true">
-            <!--[if lt IE 9]><span id="two right"><![endif]--><div class="columns one one--phone"><input class="btn btn--primary" type="submit" name="Submit" value="Submit Form"></div><!--[if lt IE 9]></span><![endif]-->
+            <!--[if lt IE 9]><span id="two"><![endif]--><div class="columns one one--phone"><input class="btn btn--primary" type="submit" name="Submit" value="Submit Form"></div><!--[if lt IE 9]></span><![endif]-->
         </form>
         <p>&nbsp;</p>
     </div>
