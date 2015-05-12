@@ -10,5 +10,6 @@ and open the template in the editor.
 
 .row row--demo {
     display: inline;
-    
+    float: left;
+    width: auto;
 }
