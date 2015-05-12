@@ -23,27 +23,29 @@ and open the template in the editor.
     width: 24%;
     margin: 1px;
     display: inline-block;
-    float: left;
 }
 
 #one {
     width: 99%;
     margin: 1px;
     display: inline-block;
-    float: left;
 }
 
 #three {
     width: 32%;
     margin: 1px;
     display: inline-block;
-    float: left;
 }
 
 #two {
     width: 49%;
     margin: 1px;
     display: inline-block;
-    float: left;
+}
+
+#six {
+    width: 16%;
+    margin: 1px;
+    display: inline-block;
 }
 
