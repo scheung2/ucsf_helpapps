@@ -3,9 +3,6 @@
     <head>
         <link type="text/css" rel="stylesheet" href="css/main.css">
         <title>help@ucsf.edu </title>
-        <!--[if lt IE 9]>
-        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
         <style>
             .wrapper{
                 background-color: #B3B9BF;
@@ -58,6 +55,9 @@
                 font-weight: bold;
             }
         </style>
+        <!--[if lt IE 10]>
+	<link type="text/css" rel="stylesheet" href="css/ie89.css" />
+        <![endif]-->
     </head>
     <body  class="wrapper">
         <!-- start banner -->
