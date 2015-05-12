@@ -432,11 +432,6 @@ include 'include/header.php';
 include 'include/footer.php';
 ?>
 
-<!--[if IE]>
-<p>This browser is IE.</p>
-
-<p>This browser is not IE.</p>
-<![endif]-->
 
 
 
