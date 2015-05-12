@@ -319,102 +319,102 @@ include 'include/header.php'
                 <div class="columns twelve twelve--phone bold">HBS HR ADMIN INFORMATION</div>
             </div>
             <div class="row row--demo">
-                <!--[if lt IE 9]><span id="three"><![endif]--><div class="columns four four--phone">Name<input autofocus class="text-input" type="text" name="adminName"></div><!--[if lt IE 9]></span><![endif]-->
-                <!--[if lt IE 9]><span id="three"><![endif]--><div class="columns four four--phone">Phone #<input class="text-input" type="text" name="adminPhone"></div><!--[if lt IE 9]></span><![endif]-->
-                <!--[if lt IE 9]><span id="three"><![endif]--><div class="columns four four--phone">Email Address<input class="text-input" type="text" name="adminEmail"></div><!--[if lt IE 9]></span><![endif]-->
+                <!--[if lt IE 10]><span id="three"><![endif]--><div class="columns four four--phone">Name<input autofocus class="text-input" type="text" name="adminName"></div><!--[if lt IE 10]></span><![endif]-->
+                <!--[if lt IE 10]><span id="three"><![endif]--><div class="columns four four--phone">Phone #<input class="text-input" type="text" name="adminPhone"></div><!--[if lt IE 10]></span><![endif]-->
+                <!--[if lt IE 10]><span id="three"><![endif]--><div class="columns four four--phone">Email Address<input class="text-input" type="text" name="adminEmail"></div><!--[if lt IE 10]></span><![endif]-->
             </div>  
             <p>This form is used by the HBS HR Admin to request the following types of HBS updates for the specified employee:</p>
             <div class="row row--demo">
-                <!--[if lt IE 9]><span id="four"><![endif]-->
+                <!--[if lt IE 10]><span id="four"><![endif]-->
                 <div class="columns three three--phone">
                     <label class="label-checkbox">
                         <input name="grace" type="checkbox" id="grace" value="true"/>A. Provide a Grace Period for Vacation Maximum
                     </label>            
                 </div>
-                <!--[if lt IE 9]></span><![endif]-->
-                <!--[if lt IE 9]><span id="four"><![endif]-->
+                <!--[if lt IE 10]></span><![endif]-->
+                <!--[if lt IE 10]><span id="four"><![endif]-->
                 <div class="columns three three--phone">
                     <label class="label-checkbox">
                         <input name="adjustLeave" type="checkbox" id="adjustLeave" value="true">B. Adjust Leave Balances
                     </label>
                 </div>
-                <!--[if lt IE 9]></span><![endif]-->
-                <!--[if lt IE 9]><span id="four"><![endif]-->
+                <!--[if lt IE 10]></span><![endif]-->
+                <!--[if lt IE 10]><span id="four"><![endif]-->
                 <div class="columns three three--phone">
                     <label class="label-checkbox">
                         <input name="adjustMonths" type="checkbox" id="adjustMonths" value="true">C. Adjust Months of Service
                     </label>
                 </div>
-                <!--[if lt IE 9]></span><![endif]-->
-                <!--[if lt IE 9]><span id="four"><![endif]-->
+                <!--[if lt IE 10]></span><![endif]-->
+                <!--[if lt IE 10]><span id="four"><![endif]-->
                 <div class="columns three three--phone">
                     <label class="label-checkbox">
                         <input name="grandfathered" type="checkbox" id="grandfathered" value="true">D. End Grandfathered Status
                     </label>
                 </div>
-                <!--[if lt IE 9]></span><![endif]-->
+                <!--[if lt IE 10]></span><![endif]-->
             </div>
 
             <div class="row row--demo">
-                <!--[if lt IE 9]><span id="four"><![endif]-->
+                <!--[if lt IE 10]><span id="four"><![endif]-->
                 <div class="columns three three--phone">
                     <label class="label-checkbox">
                         <input name="overrideVaction" type="checkbox" id="overrideVaction" value="true"/>E. Override Vacation Eligibility
                     </label>
                 </div>
-                <!--[if lt IE 9]></span><![endif]-->
-                <!--[if lt IE 9]><span id="four"><![endif]-->
+                <!--[if lt IE 10]></span><![endif]-->
+                <!--[if lt IE 10]><span id="four"><![endif]-->
                 <div class="columns three three--phone">
                     <label class="label-checkbox">
                         <input name="changeManagement" type="checkbox" id="changeManagement" value="true"/>F. Change Management Group
                     </label>
                 </div>
-                <!--[if lt IE 9]></span><![endif]-->
-                <!--[if lt IE 9]><span id="four"><![endif]-->
+                <!--[if lt IE 10]></span><![endif]-->
+                <!--[if lt IE 10]><span id="four"><![endif]-->
                 <div class="columns three three--phone">
                     <label class="label-checkbox">
                         <input name="unRestricted_Time" type="checkbox" id="unRestricted_Time" value="true"/>G. Assign/Remove Non-Exempt Unrestricted Timesheet
                     </label>
                 </div>
-                <!--[if lt IE 9]></span><![endif]-->
-                <!--[if lt IE 9]><span id="four"><![endif]-->
+                <!--[if lt IE 10]></span><![endif]-->
+                <!--[if lt IE 10]><span id="four"><![endif]-->
                 <div class="columns three three--phone">
                     <label class="label-checkbox">
                         <input name="autoPopulation_Time" type="checkbox" id="autoPopulation_Time" value="true"/>H. Assign/Remove Auto-Population of Timesheet
                     </label>
                 </div>
-                <!--[if lt IE 9]></span><![endif]-->
+                <!--[if lt IE 10]></span><![endif]-->
             </div>
            
-            <!--[if lt IE 9]><span id="one"><![endif]-->
+            <!--[if lt IE 10]><span id="one"><![endif]-->
             <p>Note: Items G and H only apply to Bi-Weekly employees.</p>
-            <!--[if lt IE 9]></span><![endif]-->
+            <!--[if lt IE 10]></span><![endif]-->
             <p>&nbsp;</p>
             <div class="row row--demo">
                 <div class="columns twelve twelve--phone bold">EMPLOYEE INFORMATION</div>
             </div>
             <div class="row row--demo">
-                <!--[if lt IE 9]><span id="three"><![endif]--><div class="columns four four--phone">Name<input class="text-input" type="text" name="employeeName"></div><!--[if lt IE 9]></span><![endif]-->
-                <!--[if lt IE 9]><span id="three"><![endif]--><div class="columns four four--phone">Employee ID #<input class="text-input" name="employeeID" type="text"></div><!--[if lt IE 9]></span><![endif]-->
-                <!--[if lt IE 9]><span id="three"><![endif]--><div class="columns four four--phone">Management Group #<input class="text-input" name="employeeManagementGroup" type="text" size="30"></div> <!--[if lt IE 9]></span><![endif]-->
+                <!--[if lt IE 10]><span id="three"><![endif]--><div class="columns four four--phone">Name<input class="text-input" type="text" name="employeeName"></div><!--[if lt IE 10]></span><![endif]-->
+                <!--[if lt IE 10]><span id="three"><![endif]--><div class="columns four four--phone">Employee ID #<input class="text-input" name="employeeID" type="text"></div><!--[if lt IE 10]></span><![endif]-->
+                <!--[if lt IE 10]><span id="three"><![endif]--><div class="columns four four--phone">Management Group #<input class="text-input" name="employeeManagementGroup" type="text" size="30"></div> <!--[if lt IE 10]></span><![endif]-->
             </div>
             <div class="row row--demo">
-                <!--[if lt IE 9]><span id="three"><![endif]--><div class="columns four four--phone">Is this individual a UCSF Employee?</div><!--[if lt IE 9]></span><![endif]-->
+                <!--[if lt IE 10]><span id="three"><![endif]--><div class="columns four four--phone">Is this individual a UCSF Employee?</div><!--[if lt IE 10]></span><![endif]-->
                 <div class="columns eight eight--phone">
-                    <!--[if lt IE 9]><span id="three"><![endif]-->
+                    <!--[if lt IE 10]><span id="three"><![endif]-->
                     <div class="columns four four--phone">
                         <label class="label-radio">
                             <input name="ucsfEmployee" type="radio" value="UCSF Employee">Yes
                         </label>
                     </div>
-                    <!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="three"><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="three"><![endif]-->
                     <div class="columns four four--phone">
                         <label class="label-radio">
                             <input name="ucsfEmployee" type="radio" value="Not a UCSF Employee">No
                         </label>
                     </div>
-                    <!--[if lt IE 9]></span><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
                 </div>
             </div>
             <p>&nbsp;</p>
@@ -442,17 +442,17 @@ include 'include/header.php'
 
             <div class="hide" id="B">
                 <div class="row row--demo">
-                    <!--[if lt IE 9]><span id="six"><![endif]--><div class="columns twelve twelve--phone bold">B. Adjust Leave Balances</div><!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="six"><![endif]--><div class="columns two two--phone">Leave Type</div><!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="six"><![endif]--><div class="columns one one--phone">Add/Remove</div><!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="six"><![endif]--><div class="columns two two--phone">Type of Adjustment</div><!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="six"><![endif]--><div class="columns two two--phone">Effective Date (MM/DD/YYYY)</div><!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="six"><![endif]--><div class="columns two two--phone"># of hours to Add/Remove</div><!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="six"><![endif]--><div class="columns three three--phone">Reason</div><!--[if lt IE 9]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="six"><![endif]--><div class="columns twelve twelve--phone bold">B. Adjust Leave Balances</div><!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="six"><![endif]--><div class="columns two two--phone">Leave Type</div><!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="six"><![endif]--><div class="columns one one--phone">Add/Remove</div><!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="six"><![endif]--><div class="columns two two--phone">Type of Adjustment</div><!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="six"><![endif]--><div class="columns two two--phone">Effective Date (MM/DD/YYYY)</div><!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="six"><![endif]--><div class="columns two two--phone"># of hours to Add/Remove</div><!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="six"><![endif]--><div class="columns three three--phone">Reason</div><!--[if lt IE 10]></span><![endif]-->
                 </div>    
                 <div class="row row--demo">
-                    <!--[if lt IE 9]><span id="six"><![endif]--><div class="columns two two--phone">Vacation Leave</div><!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="six"><![endif]-->
+                    <!--[if lt IE 10]><span id="six"><![endif]--><div class="columns two two--phone">Vacation Leave</div><!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="six"><![endif]-->
                     <div class="columns one one--phone">
                         <label class="label-radio">
                             <input name="AdjVac" type="radio" value="Add Leave">Add
@@ -461,8 +461,8 @@ include 'include/header.php'
                             <input name="AdjVac" type="radio" value="Remove Leave">Remove
                         </label>
                     </div>
-                    <!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="six"><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="six"><![endif]-->
                     <div class="columns two two--phone">
                         <select name="AdjustTypeVac" id="AdjustTypeVac">
                             <option value=""> -select- </option>
@@ -470,14 +470,14 @@ include 'include/header.php'
                             <option>Current Balance</option>
                         </select>
                     </div>
-                    <!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="six"><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="six"><![endif]-->
                     <div class="columns two two--phone"><input class="text-input" name="AdjDateVac" type="text" id="AdjDateVac" size="12"></div>
-                    <!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="six"><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="six"><![endif]-->
                     <div class="columns two two--phone"><input class="text-input" name="AdjHoursVac" type="text" id="AdjHoursVac" size="10"></div>
-                    <!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="six"><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="six"><![endif]-->
                     <div class="columns three three--phone">
                         <select name="AdjustReasonVac" id="AdjustReasonVac">
                             <option value=""> -select- </option>
@@ -490,13 +490,13 @@ include 'include/header.php'
                             <option>Other</option>
                         </select>
                     </div>
-                    <!--[if lt IE 9]></span><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
                 </div>
                 <div class="row row--demo">
-                    <!--[if lt IE 9]><span id="six"><![endif]-->
+                    <!--[if lt IE 10]><span id="six"><![endif]-->
                     <div class="columns two two--phone">Sick Leave</div>
-                    <!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="six"><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="six"><![endif]-->
                     <div class="columns one one--phone">
                         <label class="label-radio">
                             <input name="AdjSick" type="radio" value="Add Leave">Add
@@ -505,8 +505,8 @@ include 'include/header.php'
                             <input name="AdjSick" type="radio" value="Remove Leave">Remove
                         </label>
                     </div>
-                    <!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="six"><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="six"><![endif]-->
                     <div class="columns two two--phone">
                         <select name="AdjustTypeSick" id="AdjustTypeSick">
                             <option value=""> -select- </option>
@@ -514,14 +514,14 @@ include 'include/header.php'
                             <option>Current Balance</option>
                         </select>
                     </div>
-                    <!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="six"><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="six"><![endif]-->
                     <div class="columns two two--phone"><input class="text-input" name="AdjDateSick" type="text" id="AdjDateSick" size="12"></div>
-                    <!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="six"><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="six"><![endif]-->
                     <div class="columns two two--phone"><input class="text-input" name="AdjHoursSick" type="text" id="AdjHoursSick" size="10"></div>
-                    <!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="six"><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="six"><![endif]-->
                     <div class="columns three three--phone">
                         <select name="AdjustReasonSick" id="AdjustReasonSick">
                             <option value=""> -select- </option>
@@ -534,13 +534,13 @@ include 'include/header.php'
                             <option>Other</option>
                         </select>
                     </div>
-                    <!--[if lt IE 9]></span><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
                 </div>
                 <div class="row row--demo">
-                    <!--[if lt IE 9]><span id="six"><![endif]-->
+                    <!--[if lt IE 10]><span id="six"><![endif]-->
                     <div class="columns two two--phone">Comp Time</div>
-                    <!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="six"><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="six"><![endif]-->
                     <div class="columns one one--phone">
                         <label class="label-radio">
                             <input name="AdjCompTime" type="radio" value="Add Leave">Add
@@ -549,8 +549,8 @@ include 'include/header.php'
                             <input name="AdjCompTime" type="radio" value="Remove Leave">Remove
                         </label>
                     </div>
-                    <!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="six"><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="six"><![endif]-->
                     <div class="columns two two--phone">
                         <select name="AdjustCompTime" id="AdjustCompTime">
                             <option value=""> -select- </option>
@@ -558,14 +558,14 @@ include 'include/header.php'
                             <option>Current Balance</option>
                         </select>
                     </div>
-                    <!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="six"><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="six"><![endif]-->
                     <div class="columns two two--phone"><input class="text-input" name="AdjDateCompTime" type="text" id="AdjDateCompTime" size="12"></div>
-                    <!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="six"><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="six"><![endif]-->
                     <div class="columns two two--phone"><input class="text-input" name="AdjHoursCompTime" type="text" id="AdjHoursCompTime" size="10"></div>
-                    <!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="six"><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="six"><![endif]-->
                     <div class="columns three three--phone">
                         <select name="AdjustReasonCompTime" id="AdjustReasonCompTime">
                             <option value=""> -select- </option>
@@ -573,32 +573,32 @@ include 'include/header.php'
                             <option>Other</option>
                         </select>
                     </div>
-                    <!--[if lt IE 9]></span><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
                 </div>
                 
-                <!--[if lt IE 9]><span id="one"><![endif]-->
+                <!--[if lt IE 10]><span id="one"><![endif]-->
                 <p>Note: If selecting "Other" as the Reason, specify the reason in the comments section.</p>
-                <!--[if lt IE 9]></span><![endif]-->
+                <!--[if lt IE 10]></span><![endif]-->
                 <p>&nbsp;</p>
             </div>
 
             <div class="hide" id="C">
                 <div class="row row--demo">
                     <div class="columns twelve twelve--phone bold">C. Adjust Months of Service</div>
-                    <!--[if lt IE 9]><span id="four"><![endif]-->
+                    <!--[if lt IE 10]><span id="four"><![endif]-->
                     <div class="columns three three--phone">Add/Remove</div>
-                    <!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="four"><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="four"><![endif]-->
                     <div class="columns three three--phone"># of Months</div>
-                    <!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="four"><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="four"><![endif]-->
                     <div class="columns three three--phone">Effective Date (MM/DD/YYYY)</div>
-                    <!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="four"><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="four"><![endif]-->
                     <div class="columns three three--phone">Reason</div>
-                    <!--[if lt IE 9]></span><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
                     
-                    <!--[if lt IE 9]><span id="four"><![endif]-->
+                    <!--[if lt IE 10]><span id="four"><![endif]-->
                     <div class="columns three three--phone">
                         <label class="label-radio">
                             <input name="monthsService" type="radio" value="Add Months Service">Add
@@ -607,14 +607,14 @@ include 'include/header.php'
                             <input name="monthsService" type="radio" value="Remove Months Service">Remove
                         </label>
                     </div>
-                    <!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="four"><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="four"><![endif]-->
                     <div class="columns three three--phone"><input class="text-input" name="adjustNumberMonths" type="text" id="adjustNumberMonths"></div>
-                    <!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="four"><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="four"><![endif]-->
                     <div class="columns three three--phone"><input class="text-input" name="monthsServiceEffectiveDate" type="text" id="monthsServiceEffectiveDate"></div>
-                    <!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="four"><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="four"><![endif]-->
                     <div class="columns three three--phone">
                         <select name="MOSAdjustReason" id="MOSAdjustReason">
                             <option value=""> -select- </option>
@@ -624,21 +624,21 @@ include 'include/header.php'
                             <option>Other</option>
                         </select>
                     </div>
-                    <!--[if lt IE 9]></span><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
                 </div>
-                <!--[if lt IE 9]><span id="one"><![endif]-->
+                <!--[if lt IE 10]><span id="one"><![endif]-->
                 <p>Note: If selecting "Other" as the Reason, specify the reason in the comments section.</p>
-                <!--[if lt IE 9]></span><![endif]-->
+                <!--[if lt IE 10]></span><![endif]-->
                 <p>&nbsp;</p>
             </div>
 
             <div class="hide" id="D">
                 <div class="row row--demo">
                     <div class="columns twelve twelve--phone bold">D. End Grandfathered Status</div>
-                    <!--[if lt IE 9]><span id="one"><![endif]-->
+                    <!--[if lt IE 10]><span id="one"><![endif]-->
                     <div class="columns four four--phone">End Date (MM/DD/YYYY)</div>
                     <div class="columns eight eight--phone"><input class="text-input" name="dateEndGrandfathered" type="text" id="dateEndGrandfathered"></div>
-                    <!--[if lt IE 9]></span><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
                 </div>
                 <p>&nbsp;</p>
             </div>
@@ -647,23 +647,23 @@ include 'include/header.php'
                 <div class="row row--demo">
                     <div class="columns twelve twelve--phone bold">E. Override Vacation Eligibility</div>
                     
-                    <!--[if lt IE 9]><span id="three"><![endif]-->
+                    <!--[if lt IE 10]><span id="three"><![endif]-->
                     <div class="columns four four--phone">Date From (MM/DD/YYYY)</div>
-                    <!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="three"><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="three"><![endif]-->
                     <div class="columns four four--phone">Date To (MM/DD/YYYY)</div>
-                    <!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="three"><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="three"><![endif]-->
                     <div class="columns four four--phone">Eligibility Status</div>
-                    <!--[if lt IE 9]></span><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
                     
-                    <!--[if lt IE 9]><span id="three"><![endif]-->
+                    <!--[if lt IE 10]><span id="three"><![endif]-->
                     <div class="columns four four--phone"><input class="text-input" name="vacationOverrRideStart" type="text" id="vacationOverrRideStart"></div>
-                    <!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="three"><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="three"><![endif]-->
                     <div class="columns four four--phone"><input class="text-input" name="vacationOverrRideEnd" type="text" id="vacationOverrRideEnd"></div>
-                    <!--[if lt IE 9]></span><![endif]-->
-                    <!--[if lt IE 9]><span id="three"><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
+                    <!--[if lt IE 10]><span id="three"><![endif]-->
                     <div class="columns four four--phone">
                         <select name="EligibilityStatus" id="EligibilityStatus">
                             <option value=""> -select- </option>
@@ -671,24 +671,24 @@ include 'include/header.php'
                             <option>Ineligible</option>
                         </select>
                     </div>
-                    <!--[if lt IE 9]></span><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
                     
-                    <!--[if lt IE 9]><span id="one"><![endif]-->
+                    <!--[if lt IE 10]><span id="one"><![endif]-->
                     <div class="columns twelve twelve--phone bold">Reason</div>
                     <div class="columns twelve twelve--phone"><textarea name="vacationOverrideReason" cols="5" rows="5" id="comments"></textarea></div>
-                    <!--[if lt IE 9]></span><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
                 </div>
-                <!--[if lt IE 9]><span id="one"><![endif]--><p>Note: Dates must be month end dates.</p><!--[if lt IE 9]></span><![endif]-->
+                <!--[if lt IE 10]><span id="one"><![endif]--><p>Note: Dates must be month end dates.</p><!--[if lt IE 10]></span><![endif]-->
                 <p>&nbsp;</p>
             </div>
 
             <div class="hide" id="F">
                 <div class="row row--demo">
                     <div class="columns twelve twelve--phone bold">F. Change Management Group</div>
-                    <!--[if lt IE 9]><span id="one"><![endif]-->
+                    <!--[if lt IE 10]><span id="one"><![endif]-->
                     <div class="columns four four--phone">New Management Group # </div>
                     <div class="columns eight eight--phone"><input class="text-input" name="managementGroupNumber" type="text" id="managementGroupNumber"></div>
-                    <!--[if lt IE 9]></span><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
                 </div>
                 <p>&nbsp;</p>
             </div>
@@ -696,7 +696,7 @@ include 'include/header.php'
             <div class="hide" id="G">
                 <div class="row row--demo">
                     <div class="columns twelve twelve--phone bold">G. Assign/Remove Non-Exempt Unrestricted Timesheet</div>
-                    <!--[if lt IE 9]><span id="one"><![endif]-->
+                    <!--[if lt IE 10]><span id="one"><![endif]-->
                     <div class="columns four four--phone">Request</div>
                     <div class="columns eight eight--phone">
                         <select name="unResTimeRequest" id="unResTimeRequest">
@@ -705,7 +705,7 @@ include 'include/header.php'
                             <option>Ineligible</option>
                         </select>
                     </div>
-                    <!--[if lt IE 9]></span><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
                 </div>
                 <p>&nbsp;</p>
             </div>
@@ -713,7 +713,7 @@ include 'include/header.php'
             <div class="hide" id="H">
                 <div class="row row--demo">
                     <div class="columns twelve twelve--phone bold">H. Assign/Remove Auto-Population of Timesheet</div>
-                    <!--[if lt IE 9]><span id="one"><![endif]-->
+                    <!--[if lt IE 10]><span id="one"><![endif]-->
                     <div class="columns four four--phone">Request</div>
                     <div class="columns eight four--phone">
                         <select name="autoPopTimeRequest" id="autoPopTimeRequest">
@@ -722,32 +722,32 @@ include 'include/header.php'
                             <option>Ineligible</option>
                         </select>
                     </div>
-                    <!--[if lt IE 9]></span><![endif]-->
+                    <!--[if lt IE 10]></span><![endif]-->
                 </div>
                 <p>&nbsp;</p>
             </div>
 
             <div class="row row--demo">
-                <!--[if lt IE 9]><span id="one"><![endif]-->
+                <!--[if lt IE 10]><span id="one"><![endif]-->
                 <div class="columns twelve twelve--phone bold">Comments</div>
                 <div class="columns twelve twelve--phone"><textarea name="comments" cols="5" rows="5" id="comments"></textarea></div>
-                <!--[if lt IE 9]></span><![endif]-->
+                <!--[if lt IE 10]></span><![endif]-->
             </div>
 
-            <!--[if lt IE 9]><span id="one"><![endif]-->
+            <!--[if lt IE 10]><span id="one"><![endif]-->
             <p>CERTIFICATION: Submission of this form serves as your electronic signature. It certifies that the request aligns with policy and has been appropriately approved by the employee in accordance with departmental procedures.</p>
-            <!--[if lt IE 9]></span><![endif]-->
+            <!--[if lt IE 10]></span><![endif]-->
 
             <input name="validate" type="hidden" id="validate" value="true">
-            <!--[if lt IE 9]><span id="two"><![endif]-->
+            <!--[if lt IE 10]><span id="two"><![endif]-->
             <div class="columns ten ten--phone"><a href="hbs_update.php" class="btn btn--primary">Reset Form</a></div>
-            <!--[if lt IE 9]></span><![endif]-->
-            <!--[if lt IE 9]><span id="three"><![endif]-->
+            <!--[if lt IE 10]></span><![endif]-->
+            <!--[if lt IE 10]><span id="three"><![endif]-->
             <div></div>
-            <!--[if lt IE 9]></span><![endif]-->
-            <!--[if lt IE 9]><span id="six"><![endif]-->
+            <!--[if lt IE 10]></span><![endif]-->
+            <!--[if lt IE 10]><span id="six"><![endif]-->
             <div columns one one--phone><input class="btn btn--primary" type="submit" name="Submit" value="Submit Form"> </div>
-            <!--[if lt IE 9]></span><![endif]-->
+            <!--[if lt IE 10]></span><![endif]-->
         </form>
     </div>
 
