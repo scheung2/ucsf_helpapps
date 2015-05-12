@@ -20,15 +20,22 @@ and open the template in the editor.
 }*/
 
 #four {
-    width: 23%;
-    margin: 2px;
+    width: 24%;
+    margin: 1px;
     display: inline-block;
     float: left;
 }
 
 #one {
-    width: 97%;
-    margin: 2px;
+    width: 99%;
+    margin: 1px;
+    display: inline-block;
+    float: left;
+}
+
+#three {
+    width: 32%;
+    margin: 1px;
     display: inline-block;
     float: left;
 }

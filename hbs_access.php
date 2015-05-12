@@ -272,12 +272,16 @@ include 'include/header.php';
 
             <p>&nbsp;</p>
             <div class="row row--demo">
+                <!--[if lt IE 9]><span id="one"><![endif]-->
                 <div class="columns twelve twelve--phone bold">EMPLOYEE INFORMATION</div>
+                <!--[if lt IE 9]></span><![endif]-->
             </div>
             <div class="row row--demo">
+                <!--[if lt IE 9]><span id="three"><![endif]-->
                 <div class="columns four four--phone">Name<input class="text-input" type="text" name="employeeName"></div>
                 <div class="columns four four--phone">Employee ID #<input class="text-input" name="employeeID" type="text"></div>
                 <div class="columns four four--phone">Management Group #<input class="text-input" name="employeeManagementGroup" type="text" size="30"></div> 
+                <!--[if lt IE 9]></span><![endif]-->
             </div>
             <div class="row row--demo">
                 <div class="columns four four--phone">Is this individual a UCSF Employee?</div>
@@ -330,42 +334,50 @@ include 'include/header.php';
                     </div>
                 </div>
                 <div class="row row--demo">
-                    <div class="columns four four--phone">Access Level</div>
-                    <div class="columns eight eight--phone">Group/Department Number</div>
+                    <!--[if lt IE 9]><span id="two"><![endif]--><div class="columns four four--phone">Access Level</div><!--[if lt IE 9]></span><![endif]-->
+                    <!--[if lt IE 9]><span id="two"><![endif]--><div class="columns eight eight--phone">Group/Department Number</div><!--[if lt IE 9]></span><![endif]-->
                 </div>
                 <div class="row row--demo">
+                    <!--[if lt IE 9]><span id="two"><![endif]-->
                     <div class="columns four four--phone">
                         <label class="label-checkbox">
                             <input name="ManagementGroupAccess" type="checkbox" id="ManagementGroupAccess" value="true"/>Management Group Access
                         </label>
                     </div>
+                    <!--[if lt IE 9]></span><![endif]-->
+                    <!--[if lt IE 9]><span id="two"><![endif]-->
                     <div class="columns eight eight--phone">
                         Management Group # from HBS
                         <input class="text-input" name="ManagementGroup" type="text" id="ManagementGroup">
                     </div>
                 </div>
+                <!--[if lt IE 9]></span><![endif]-->
+                <!--[if lt IE 9]><span id="two"><![endif]-->
                 <div class="row row--demo">
                     <div class="columns four four--phone">
                         <label class="label-checkbox">
                             <input name="DepartmentGroupAccess" type="checkbox" id="DepartmentGroupAccess" value="true"/>Department Plus Access
                         </label>
                     </div>
+                    <!--[if lt IE 9]></span><![endif]-->
+                    <!--[if lt IE 9]><span id="two"><![endif]-->
                     <div class="columns eight eight--phone">
                         Department # from Department Hierarchy
                         <input class="text-input" name="DepartmentNum" type="text" id="DepartmentNum">
                     </div>
+                    <!--[if lt IE 9]></span><![endif]-->
                 </div>
 
 
 
 
-
+                <!--[if lt IE 9]><span id="one"><![endif]-->
                 <p>Notes</p>
                 <ul>
                     <li>Management Group - Provides the HBS HR Admin access to a single management group.</li>
                     <li>Department Plus - Provides the HBS HR Admin access to all 'child' management groups under the 'parent' department code.</li>
                 </ul>
-
+                <!--[if lt IE 9]></span><![endif]-->
 
                 <p>&nbsp;</p>
             </div>
@@ -375,16 +387,20 @@ include 'include/header.php';
                     <div class="columns twelve twelve--phone bold">C. Replace Management Group Owner</div>
                 </div>
                 <div class="row row--demo">
-                    <div class="columns six six--phone">New Management Group Owner's Name</div>
-                    <div class="columns six six--phone">Employee ID #</div>
+                    <!--[if lt IE 9]><span id="two"><![endif]--><div class="columns six six--phone">New Management Group Owner's Name</div><!--[if lt IE 9]></span><![endif]-->
+                    <!--[if lt IE 9]><span id="two"><![endif]--><div class="columns six six--phone">Employee ID #</div><!--[if lt IE 9]></span><![endif]-->
                 </div>
                 <div class="row row--demo">
+                    <!--[if lt IE 9]><span id="two"><![endif]-->
                     <div class="columns six six--phone">
                         <input class="text-input" name="managementGroupName" type="text" id="managementGroupName">
                     </div>
+                    <!--[if lt IE 9]></span><![endif]-->
+                    <!--[if lt IE 9]><span id="two"><![endif]-->
                     <div class="columns six six--phone">
                         <input class="text-input" name="managementEmployeeID" type="text" id="managementEmployeeID">
                     </div>
+                    <!--[if lt IE 9]></span><![endif]-->
                 </div>
                 <p>&nbsp;</p>
             </div>
@@ -394,10 +410,11 @@ include 'include/header.php';
                     <div class="columns twelve twelve--phone bold">D. Change to Employee's Reports Role</div>
                 </div>
                 <div class="row row--demo">
-                    <div class="columns four four--phone">Request</div>
-                    <div class="columns eight eight--phone">Department Number</div>
+                    <!--[if lt IE 9]><span id="two"><![endif]--><div class="columns four four--phone">Request</div><!--[if lt IE 9]></span><![endif]-->
+                    <!--[if lt IE 9]><span id="two"><![endif]--><div class="columns eight eight--phone">Department Number</div><!--[if lt IE 9]></span><![endif]-->
                 </div>
                 <div class="row row--demo">
+                    <!--[if lt IE 9]><span id="two"><![endif]-->
                     <div class="columns four four--phone">
                         <select name="reportsRole" id="reportsRole">
                             <option value="">-select-</option>
@@ -405,7 +422,10 @@ include 'include/header.php';
                             <option value="Remove">Remove Reports Role</option>
                         </select>
                     </div>
+                    <!--[if lt IE 9]></span><![endif]-->
+                    <!--[if lt IE 9]><span id="two"><![endif]-->
                     <div class="columns eight eight--phone"><input class="text-input" type="text" name="roleDepartmentNumber" id="roleDepartmentNumber"></div>
+                    <!--[if lt IE 9]></span><![endif]-->
                 </div>
             </div>
 
@@ -419,9 +439,9 @@ include 'include/header.php';
             <p>CERTIFICATION: Submission of this form serves as your electronic signature. It certifies that the request aligns with policy and has been appropriately approved by the employee in accordance with departmental procedures. </p>
             <p>&nbsp;</p>
 
-            <div class="columns ten ten--phone"><a href="hbs_access.php" class="btn btn--primary">Reset Form</a></div>
+            <!--[if lt IE 9]><span id="two"><![endif]--><div class="columns ten ten--phone"><a href="hbs_access.php" class="btn btn--primary">Reset Form</a></div><!--[if lt IE 9]></span><![endif]-->
             <input name="validate" type="hidden" id="validate" value="true">
-            <div class="columns one one--phone"><input class="btn btn--primary btn--fix" type="submit" name="Submit" value="Submit Form"> </div>
+            <!--[if lt IE 9]><span id="two"><![endif]--><div class="columns one one--phone"><input class="btn btn--primary btn--fix" type="submit" name="Submit" value="Submit Form"> </div><!--[if lt IE 9]></span><![endif]-->
         </form>
         <p>&nbsp;</p>
     </div>
