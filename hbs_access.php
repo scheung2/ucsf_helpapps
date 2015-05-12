@@ -282,19 +282,25 @@ include 'include/header.php';
                 <!--[if lt IE 9]><span id="three"><![endif]--><div class="columns four four--phone">Management Group #<input class="text-input" name="employeeManagementGroup" type="text" size="30"></div><!--[if lt IE 9]></span><![endif]-->
             </div>
             <div class="row row--demo">
+                <!--[if lt IE 9]><span id="three"><![endif]-->
                 <div class="columns four four--phone">Is this individual a UCSF Employee?</div>
+                <!--[if lt IE 9]></span><![endif]-->
                 <div class="columns eight eight--phone">
                     <div class="row row--demo">
+                        <!--[if lt IE 9]><span id="three"><![endif]-->
                         <div class="columns four four--phone">
                             <label class="label-radio">
                                 <input name="ucsfEmployee" type="radio" value="UCSF Employee">Yes
                             </label>
                         </div>
+                        <!--[if lt IE 9]></span><![endif]-->
+                        <!--[if lt IE 9]><span id="three"><![endif]-->
                         <div class="columns four four--phone">
                             <label class="label-radio">
                                 <input name="ucsfEmployee" type="radio" value="Not a UCSF Employee">No
                             </label>
                         </div>
+                        <!--[if lt IE 9]></span><![endif]-->
                     </div>
                 </div>
             </div>
