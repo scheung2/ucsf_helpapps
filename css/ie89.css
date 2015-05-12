@@ -19,7 +19,7 @@ and open the template in the editor.
     margin: 2px;
 }*/
 
-.columns four {
+#four {
     width: 20%;
     margin: 2px;
     display: inline-block;
