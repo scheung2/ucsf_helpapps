@@ -9,8 +9,12 @@ and open the template in the editor.
 */
 
 .row row--demo {
+    
+}
+
+.columns {
     display: inline-block;
     float: left;
-    width: auto;
+    width: 20%;
     margin: 0px;
 }
