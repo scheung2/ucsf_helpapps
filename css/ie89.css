@@ -18,3 +18,9 @@ and open the template in the editor.
     width: 40%;
     margin: 2px;
 }*/
+
+.columns four {
+    width: 20%;
+    margin: 2px;
+    display: inline-block;
+}
