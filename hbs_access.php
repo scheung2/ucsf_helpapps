@@ -277,11 +277,9 @@ include 'include/header.php';
                 <!--[if lt IE 9]></span><![endif]-->
             </div>
             <div class="row row--demo">
-                <!--[if lt IE 9]><span id="three"><![endif]-->
-                <div class="columns four four--phone">Name<input class="text-input" type="text" name="employeeName"></div>
-                <div class="columns four four--phone">Employee ID #<input class="text-input" name="employeeID" type="text"></div>
-                <div class="columns four four--phone">Management Group #<input class="text-input" name="employeeManagementGroup" type="text" size="30"></div> 
-                <!--[if lt IE 9]></span><![endif]-->
+                <!--[if lt IE 9]><span id="three"><![endif]--><div class="columns four four--phone">Name<input class="text-input" type="text" name="employeeName"></div><!--[if lt IE 9]></span><![endif]-->
+                <!--[if lt IE 9]><span id="three"><![endif]--><div class="columns four four--phone">Employee ID #<input class="text-input" name="employeeID" type="text"></div><!--[if lt IE 9]></span><![endif]-->
+                <!--[if lt IE 9]><span id="three"><![endif]--><div class="columns four four--phone">Management Group #<input class="text-input" name="employeeManagementGroup" type="text" size="30"></div><!--[if lt IE 9]></span><![endif]-->
             </div>
             <div class="row row--demo">
                 <div class="columns four four--phone">Is this individual a UCSF Employee?</div>

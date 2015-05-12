@@ -39,3 +39,11 @@ and open the template in the editor.
     display: inline-block;
     float: left;
 }
+
+#two {
+    width: 49%;
+    margin: 1px;
+    display: inline-block;
+    float: left;
+}
+
