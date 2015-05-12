@@ -228,38 +228,46 @@ include 'include/header.php';
             </div>
             
             <div class="row row--demo">
+               <!--[if lt IE 9]><span id="one"><![endif]-->
                 <div class="columns twelve twelve--phone">I am the
-
                     <select name="requesterType" id="requesterType">
                         <option selected>--select one--</option>
                         <option>Access Administrator</option>
                         <option>Management Group Owner</option>
                     </select>
                 </div>
+                <!--[if lt IE 9]></span><![endif]-->
             </div>
             <p>&nbsp;</p>
-
             <div class="row row--demo">
+                <!--[if lt IE 9]><span id="four"><![endif]-->
                 <div class="columns three three--phone">
                     <label class="label-checkbox">
                         <input name="approverRoleCheck" type="checkbox" id="approverRoleCheck" value="true"/>A. Change the Employee's Approver Role
                     </label>            
                 </div>
+                <!--[if lt IE 9]></span><![endif]-->
+                <!--[if lt IE 9]><span id="four"><![endif]-->
                 <div class="columns three three--phone">
                     <label class="label-checkbox">
                         <input name="adminRoleCheck" type="checkbox" id="adminRoleCheck" value="true">B. Change to Employee's HR Admin Role
                     </label>
                 </div>
+                <!--[if lt IE 9]></span><![endif]-->
+                <!--[if lt IE 9]><span id="four"><![endif]-->
                 <div class="columns three three--phone">
                     <label class="label-checkbox">
                         <input name="replaceGroupOwnerCheck" type="checkbox" id="replaceGroupOwnerCheck" value="true">C. Replace Management Group Owner
                     </label>
                 </div>
+                <!--[if lt IE 9]></span><![endif]-->
+                <!--[if lt IE 9]><span id="four"><![endif]-->
                 <div class="columns three three--phone">
                     <label class="label-checkbox">
                         <input name="reportsRoleCheck" type="checkbox" id="reportsRoleCheck" value="true">D. Change to Employee's Reports Role
                     </label>
                 </div>
+                <!--[if lt IE 9]></span><![endif]-->
             </div>
 
             <p>&nbsp;</p>
