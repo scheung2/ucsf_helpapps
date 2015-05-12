@@ -573,7 +573,7 @@ include 'include/header.php'
                             <option>Other</option>
                         </select>
                     </div>
-                    <!--[if lt IE 9]><span id="six"><![endif]-->
+                    <!--[if lt IE 9]></span><![endif]-->
                 </div>
                 
                 <!--[if lt IE 9]><span id="one"><![endif]-->
