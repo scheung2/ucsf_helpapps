@@ -584,9 +584,7 @@ include 'include/header.php'
 
             <div class="hide" id="C">
                 <div class="row row--demo">
-                    <!--[if lt IE 9]><span id="four"><![endif]-->
                     <div class="columns twelve twelve--phone bold">C. Adjust Months of Service</div>
-                    <!--[if lt IE 9]></span><![endif]-->
                     <!--[if lt IE 9]><span id="four"><![endif]-->
                     <div class="columns three three--phone">Add/Remove</div>
                     <!--[if lt IE 9]></span><![endif]-->
