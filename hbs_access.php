@@ -50,12 +50,10 @@ $comments = (empty($_POST['comments']) ? NULL : $_POST['comments']);
 
 $validate = (empty($_POST['validate']) ? FALSE : $_POST['validate']);
 
-
-
-
 if ($validate !== FALSE) {
     $requesterType = $_POST['requesterType'];
 }
+
 if (($validate !== FALSE) && ($requesterType !== "--select one--")) {
 
     $subject = "HBS Access Change for " . $employeeName . " submitted by " . $adminName;
@@ -168,33 +166,32 @@ include 'include/header.php';
                     $("#D").toggle();
                 });
             });
+            $(document).ready(function () {
+                
+                $('#requesterType').validate({
+                    rules: {
+                        requesterType: {
+                            selectcheck: true
+                        }
+                        
+                    }
+                });
+                
+                jQuery.validator.addMethod('selectcheck', function (value) {
+                    return (value != '0');
+                }, "Please select your role");
+
+            });
         </script>
 
         <script language="JavaScript" type="text/JavaScript">
             function MM_findObj(n, d) { //v4.01
-            var p,i,x;  
-
-            if(!d) 
-            d=document;
-
-            if((p=n.indexOf("?"))>0&&parent.frames.length) {
-
-            d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);
-
-            }
-
-            if(!(x=d[n])&&d.all) 
-            x=d.all[n]; 
-
-            for (i=0;!x&&i<d.forms.length;i++) 
-            x=d.forms[i][n];
-
-            for(i=0;!x&&d.layers&&i<d.layers.length;i++) 
-            x=MM_findObj(n,d.layers[i].document);
-
-            if(!x && d.getElementById) 
-            x=d.getElementById(n); 
-            return x;
+            var p,i,x; if(!d)
+            d=document;if((p=n.indexOf("?"))>0&&parent.frames.length) {
+            d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+            if(!(x=d[n])&&d.all) x=d.all[n];for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+            for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+            if(!x && d.getElementById) x=d.getElementById(n);return x;
             }
 
             function MM_validateForm() { //v4.0
@@ -214,7 +211,7 @@ include 'include/header.php';
             }
         </script>
 
-        <form action="" method="post" name="form1" onsubmit="MM_validateForm('adminName', '', 'R', 'ucsfEmployee', '', 'R', 'depCode', '', 'R', 'adminPhone', '', 'R', 'adminEmail', '', 'RisEmail', 'employeeName', '', 'R', 'employeeID', '', 'R', 'employeeManagementGroup', '', 'R');
+        <form action="" method="post" name="form1" onsubmit="MM_validateForm('adminName', '', 'R', 'ucsfEmployee', '', 'R', 'depCode', '', 'R', 'adminPhone', '', 'R', 'adminEmail', '', 'RisEmail', 'employeeName', '', 'R', 'employeeID', '', 'R', 'employeeManagementGroup', '', 'R', 'requesterType', '', 'R');
                     return document.MM_returnValue">
             <p>This form can only be submitted by the Management Group Owner OR the Access Administrator. Fill in the appropriate section based on your role.</p>
             <div class="row row--demo">
@@ -231,7 +228,7 @@ include 'include/header.php';
                <!--[if lt IE 10]><span id="one"><![endif]-->
                 <div class="columns twelve twelve--phone">I am the
                     <select name="requesterType" id="requesterType">
-                        <option selected>--select one--</option>
+                        <option value=''>--select one--</option>
                         <option>Access Administrator</option>
                         <option>Management Group Owner</option>
                     </select>
@@ -454,6 +451,7 @@ include 'include/header.php';
     </div>
     <?php
 } else {
+    
     echo "<a href='index.php'><h4>UCSF Help Applications</h4></a>";
     echo "<pre>";
     echo "<h2>Email Sent</h2>\n";

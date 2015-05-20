@@ -257,63 +257,7 @@ include 'include/header.php'
             }
         </script>
 
-        <script  type="text/JavaScript">
-            function testForObject(Id, Tag)
-            {
-            var o = document.getElementById(Id);
-            if (o){
-            if (Tag){
-            if (o.tagName.toLowerCase() == Tag.toLowerCase()){
-            return o;
-            }
-            } else {
-            return o;
-            }
-            }
-            return null;
-            }
-
-            //  ****************************  //
-            function traverseDom (root)
-            {
-            var s = '';
-
-            var c = root, n = null;
-            var it = 0;
-            do {
-            n = c.firstChild;
-            if (n == null){
-            // visit c
-            if (c.nodeType == 3)
-            s += c.nodeValue.replace(/\s/, "");
-            // done visit c
-
-            n = c.nextSibling;
-            }
-
-            if (n == null){
-            var tmp = c;
-            do {
-            n = tmp.parentNode;
-            if (n == root)
-            break;
-
-            // visit n
-            if (n.nodeType == 3)
-            s += n.nodeValue.replace(/\s/, "");
-            // done visit n
-
-            tmp = n;
-            n = n.nextSibling;
-            }while (n == null)
-            }
-            c = n;
-            }
-            while (c != root);
-            return s;
-            }
-        </script>
-        <form action="" method="post" name="form1" onSubmit="MM_validateForm('adminName', '', 'R', 'adminPhone', '', 'R', 'adminEmail', '', 'RisEmail', 'employeeName', '', 'R', 'employeeID', '', 'R', 'employeeManagementGroup', '', 'R');
+        <form action="" method="post" name="form1" onSubmit="MM_validateForm('adminName', '', 'R', 'adminPhone', '', 'R', 'adminEmail', '', 'RisEmail', 'employeeName', '', 'R', 'employeeID', '', 'R', 'employeeManagementGroup', '', 'R', 'ucsfEmployee', '', 'R');
                 return document.MM_returnValue">
             <div class="row row--demo">
                 <div class="columns twelve twelve--phone bold">HBS HR ADMIN INFORMATION</div>
