@@ -226,6 +226,7 @@ include 'include/header.php';
             
             <div class="row row--demo">
                <!--[if lt IE 10]><span id="one"><![endif]-->
+                <div class='columns twelve twelve--phone bold'>Requester Type</div>
                 <div class="columns twelve twelve--phone">I am the
                     <select name="requesterType" id="requesterType">
                         <option value=''>--select one--</option>
