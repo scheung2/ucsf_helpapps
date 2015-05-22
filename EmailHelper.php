@@ -35,8 +35,7 @@ if (!empty($_POST['EmailAddress'])) {
         $matches[0] = '';
     }
 
-    $filter = 'mail=' . $matches[0];
-    $filter = escapeString($filter);
+    $filter = 'mail=' . escapeString($matches[0]);
 
     $ldapconn = ldap_connect($config['LDAP host'], $config['Port'])
             or die('did not connect');
