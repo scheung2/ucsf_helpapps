@@ -8,7 +8,6 @@ $privileged_networks[] = "64.54."; //UCSF
 $privileged_networks[] = "128.218."; //UCSF
 $privileged_networks[] = "169.230."; //VPN
 $privileged_networks[] = "192.168."; //RFC 1918
-$privileged_networks[] = "169.230."; //VPN
 //$privileged_networks[] = "127.0.0.1"; //Localhost
 $allowed = FALSE;
 
@@ -36,11 +35,14 @@ if (!empty($_POST['EmailAddress'])) {
         $matches[0] = '';
     }
 
-    $filter = '(mail=' . $matches[0] . ')';
+    $filter = 'mail=' . $matches[0];
+    $filter = escapeString($filter);
 
     $ldapconn = ldap_connect($config['LDAP host'], $config['Port'])
             or die('did not connect');
 
+    ldap_set_option($cnx, LDAP_OPT_PROTOCOL_VERSION, 3);
+    
     $ldapbind = ldap_bind($ldapconn, $config['Bind DN'], $config['Bind password'])
             or die('did not bind');
 
@@ -49,6 +51,18 @@ if (!empty($_POST['EmailAddress'])) {
 
     $data = ldap_get_entries($ldapconn, $result);
     ldap_close($ldapconn);
+}
+
+function escapeString($string) {
+    # Backslash must be listed first, since otherwise it would replace the
+    # backslashes used in other replacements
+    $chars = array(
+     "\x00" => '\00',
+     '\\' => '\5c',
+     '(' => '\28',
+     ')' => '\29',
+     '*' => '\2A');
+    return str_replace(array_keys($chars), array_values($chars), $string);
 }
 
 include 'include/header.php';
