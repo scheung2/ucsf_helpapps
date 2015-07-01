@@ -2,7 +2,7 @@
 
     <head>
         <link type="text/css" rel="stylesheet" href="css/main.css">
-        <title>help@ucsf.edu </title>
+        
         <style>
             .wrapper{
                 background-color: #B3B9BF;
@@ -53,6 +53,14 @@
             
             .bold {
                 font-weight: bold;
+            }
+            
+            .ui-alert--error {
+                background: #EB093C;
+            }
+            
+            .ui-alert--success {
+                background: #052049;
             }
         </style>
         <!--[if lt IE 10]>

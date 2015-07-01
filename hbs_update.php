@@ -178,7 +178,7 @@ include 'include/header.php'
 ?>
 
 
-
+<title>HBS Update</title>
 <?php if ($validate === FALSE) { ?>
     <div class="row row--demo">
         <a href="index.php"><h4>UCSF Help Applications</h4></a>

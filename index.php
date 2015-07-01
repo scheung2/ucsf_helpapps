@@ -2,6 +2,7 @@
 include 'include/header.php';
 include 'include/analyticstracking.php';
 ?>
+<title>HelpApps</title>
 <style>
     td:hover{
         text-decoration: underline;

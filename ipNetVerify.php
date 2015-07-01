@@ -101,8 +101,7 @@ if (substr($ip, 0, 8) === "169.230.") {
 
 include 'include/header.php'
 ?>
-
-
+<title>Ip Verify</title>
 <div class="row row--demo">
     <div class="columns three"><a href="index.php"><h4>UCSF Help Applications</h4></a> </div>
     <div class="columns six">

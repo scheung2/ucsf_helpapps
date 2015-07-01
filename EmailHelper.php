@@ -66,7 +66,7 @@ function escapeString($string) {
 
 include 'include/header.php';
 ?>
-
+<title>Email Helper</title>
 <div class="row row--demo">
     <div class="columns three"> <a href="index.php"><h4>UCSF Help Applications</h4></a></div>
     <div class="columns six">

@@ -130,6 +130,7 @@ if (($validate !== FALSE) && ($requesterType !== "--select one--")) {
 
 include 'include/header.php';
 ?>
+<title>HBS Access</title>
 <?php if ($validate === FALSE) { ?>
 
     <div class="row row--demo">
