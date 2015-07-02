@@ -111,7 +111,7 @@ include 'include/header.php'
         <p>&nbsp</p>
         <h2>ITS Network Verification</h2>
         <p>The box below tests whether the Virtual Private Network appears to be working at the time you visited (loaded) this web page.</p>
-
+        <p>&nbsp;</p>
         <?php if ($release_level === "3") { ?>
 
             <div class="ui-alert ui-alert--success">
