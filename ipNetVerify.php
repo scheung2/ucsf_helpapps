@@ -4,16 +4,19 @@ $release_level = "1";
 $slice = 0;
 $octet3;
 $octet4;
-$ip = "test";
+
 $networkLocation = "not UCSF";
 
-
-if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+if (!empty($_GET["ip"])) {
+    $ip = $_GET["ip"];
+} else if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
     $ip = $_SERVER['HTTP_CLIENT_IP'];
 } else if (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
     $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-} else {
+} else if (!empty($_SERVER['REMOTE_ADDR'])) {
     $ip = $_SERVER['REMOTE_ADDR'];
+} else {
+    $ip = 'Cannot Find Ip';
 }
 
 //$ip = '169.230.243.74';
