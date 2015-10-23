@@ -181,8 +181,12 @@ include 'include/header.php'
 <title>HBS Update</title>
 <?php if ($validate === FALSE) { ?>
     <div class="row row--demo">
+<<<<<<< HEAD
+        <h2>HBS Update Form</h2>
+=======
         <a href="index.php"><h4>UCSF Help Applications</h4></a>
         <h2>Campus HBS Update Form</h2>
+>>>>>>> d2f0dc0a6f1d93f56db5b701ba9f32c26cc121b8
 
         <noscript>
         <p>&nbsp;</p>
