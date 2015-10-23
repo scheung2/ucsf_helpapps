@@ -1,16 +1,8 @@
-<?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-?>
-
 <html>
 
     <head>
         <link type="text/css" rel="stylesheet" href="css/main.css">
+        <title>help@ucsf.edu </title>
         <style>
             .wrapper{
                 background-color: #B3B9BF;
@@ -51,6 +43,17 @@
                 border-bottom: 1px #fff solid;
             }
 
+            .text-input, textarea {
+                padding: .3em 0em;
+            }
+            
+            .hide {
+                display: none;
+            }
+            
+            .bold {
+                font-weight: bold;
+            }
         </style>
     </head>
     <body  class="wrapper">
@@ -72,8 +75,10 @@
             <!-- Start Navigation -->
             <header class="nav-bar">
                 <div class="brand-logo"><img src="imgs/UCSF_InfoTechnology_navy_RGB-2.png" height="58" width="227" border="0" hspace="14"></div>
+                
             </header>
             <!--/Site Header (subbrand and navigation)-->
             <!-- Content -->
+            
             
 

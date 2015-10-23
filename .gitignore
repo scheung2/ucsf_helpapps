@@ -1,6 +1,7 @@
 # Ignore paths that contain user-generated content.
 
 conf/
+vendor/
 
 # File patterns that are ignored
 *.swp
@@ -9,3 +10,4 @@ conf/
 .idea
 *.conf
 *.ini
+*.htaccess

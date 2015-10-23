@@ -1,16 +1,8 @@
-<?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-?>
-
 <html>
 
     <head>
         <link type="text/css" rel="stylesheet" href="css/main.css">
+        
         <style>
             .wrapper{
                 background-color: #B3B9BF;
@@ -23,6 +15,7 @@
                 padding-left:15px;
                 font-family: 'HelveticaNeueLTStd',arial, sans-serif;
                 padding-right:15px;
+                
             }
             .footer{
                 position: relative;
@@ -50,7 +43,29 @@
                 border-bottom: 1px #fff solid;
             }
 
+            .text-input, textarea {
+                padding: .3em 0em;
+            }
+            
+            .hide {
+                display: none;
+            }
+            
+            .bold {
+                font-weight: bold;
+            }
+            
+            .ui-alert--error {
+                background: #EB093C;
+            }
+            
+            .ui-alert--success {
+                background: #052049;
+            }
         </style>
+        <!--[if lt IE 10]>
+	<link type="text/css" rel="stylesheet" href="css/ie89.css" />
+        <![endif]-->
     </head>
     <body  class="wrapper">
         <!-- start banner -->
@@ -58,7 +73,6 @@
             <div class="top-header-container row">
                 <ul class="menu">
                     <li class="first"><a href="http://www.ucsf.edu">University of California San Francisco</a></li>
-                    <li><a href="http://www.ucsfhealth.org/">UCSF Medical Center</a></li>
                     <li><a href="http://www.ucsf.edu/search" title="">Search UCSF</a></li>
                     <li><a href="http://www.ucsf.edu/about">About UCSF</a></li>
                 </ul>
@@ -71,8 +85,10 @@
             <!-- Start Navigation -->
             <header class="nav-bar">
                 <div class="brand-logo"><img src="imgs/UCSF_InfoTechnology_navy_RGB-2.png" height="58" width="227" border="0" hspace="14"></div>
+                
             </header>
             <!--/Site Header (subbrand and navigation)-->
             <!-- Content -->
+            
             
 

@@ -1,18 +1,24 @@
 <?php
+include 'include/analyticstracking.php';
 $release_level = "1";
 $slice = 0;
 $octet3;
 $octet4;
-$ip = "test";
+
 $networkLocation = "not UCSF";
 
-if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+if (!empty($_GET["ip"])) {
+    $ip = $_GET["ip"];
+} else if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
     $ip = $_SERVER['HTTP_CLIENT_IP'];
 } else if (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
     $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-} else {
+} else if (!empty($_SERVER['REMOTE_ADDR'])) {
     $ip = $_SERVER['REMOTE_ADDR'];
+} else {
+    $ip = 'Cannot Find Ip';
 }
+
 //$ip = '169.230.243.74';
 //$ip = '64.54.101.82';
 //$ip = '10.7.186.158';
@@ -98,34 +104,32 @@ if (substr($ip, 0, 8) === "169.230.") {
 
 include 'include/header.php'
 ?>
-
-
+<title>Ip Verify</title>
 <div class="row row--demo">
-    <div class="columns three"> </div>
+    <div class="columns three"><a href="index.php"><h4>UCSF Help Applications</h4></a> </div>
     <div class="columns six">
-
+        <p>&nbsp</p>
         <h2>ITS Network Verification</h2>
-        <h3>Test VPN</h3>
         <p>The box below tests whether the Virtual Private Network appears to be working at the time you visited (loaded) this web page.</p>
-
+        <p>&nbsp;</p>
         <?php if ($release_level === "3") { ?>
 
-            <p style="border:2px solid #933;padding:8px;background-color:#c0edb2">
+            <div class="ui-alert ui-alert--success">
 
                 <em>Yes</em>, you are on the UCSF computing network:
-            <p>&nbsp;</p>
-            You appear to be connecting from the IP address of: <strong><?php echo($ip); ?></strong>
-            <p>&nbsp;</p>
-            From this UCSF computing resources identify you as being connected from: <strong><?php echo($networkLocation); ?></strong>
-            <p>&nbsp;</p>
-            If you are having problems connecting to a site or network resource please contact your local CSC, 
-            computer administrator or the ITS Help Desk and provide them the information found in this box.
+                <p>&nbsp;</p>
+                You appear to be connecting from the IP address of: <strong><?php echo($ip); ?></strong>
+                <p>&nbsp;</p>
+                From this UCSF computing resources identify you as being connected from: <strong><?php echo($networkLocation); ?></strong>
+                <p>&nbsp;</p>
+                If you are having problems connecting to a site or network resource please contact your local CSC, 
+                computer administrator or the ITS Help Desk and provide them the information found in this box.
 
-            </p>
+            </div>
 
         <?php } else { ?>
 
-            <div style="border:2px solid #933;padding:8px;background-color:#f0d3d3">
+            <div class="ui-alert ui-alert--error">
 
                 <em>No</em>, you are not on the UCSF computing network.<p>&nbsp;</p>
                 You look to be connecting from the IP address of:  
