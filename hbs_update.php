@@ -180,7 +180,7 @@ include 'include/header.php'
 
 <?php if ($validate === FALSE) { ?>
     <div class="row row--demo">
-        <h2>Campus HBS Update Form</h2>
+        <h2>HBS Update Form</h2>
 
         <noscript>
         <p>&nbsp;</p>

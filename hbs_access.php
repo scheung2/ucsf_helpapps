@@ -134,7 +134,7 @@ include 'include/header.php';
 <?php if ($validate === FALSE) { ?>
 
     <div class="row row--demo">
-        <h2>Campus HBS Access Form</h2>
+        <h2>HBS Access Form</h2>
 
         <!-- ***************************************************************** -->
         <noscript>
