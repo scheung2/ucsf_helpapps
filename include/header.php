@@ -2,7 +2,6 @@
 
     <head>
         <link type="text/css" rel="stylesheet" href="css/main.css">
-        
         <style>
             .wrapper{
                 background-color: #B3B9BF;

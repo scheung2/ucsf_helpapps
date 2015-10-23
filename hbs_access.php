@@ -167,22 +167,6 @@ include 'include/header.php';
                     $("#D").toggle();
                 });
             });
-            $(document).ready(function () {
-                
-                $('#requesterType').validate({
-                    rules: {
-                        requesterType: {
-                            selectcheck: true
-                        }
-                        
-                    }
-                });
-                
-                jQuery.validator.addMethod('selectcheck', function (value) {
-                    return (value != '0');
-                }, "Please select your role");
-
-            });
         </script>
 
         <script language="JavaScript" type="text/JavaScript">
@@ -231,8 +215,8 @@ include 'include/header.php';
                 <div class="columns twelve twelve--phone">I am the
                     <select name="requesterType" id="requesterType">
                         <option value=''>--select one--</option>
-                        <option>Access Administrator</option>
-                        <option>Management Group Owner</option>
+                        <option value='Access Administrator'>Access Administrator</option>
+                        <option value='Management Group Owner'>Management Group Owner</option>
                     </select>
                 </div>
                 <!--[if lt IE 10]></span><![endif]-->
