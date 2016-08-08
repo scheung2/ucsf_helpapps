@@ -14,7 +14,7 @@ $adminPhone = (empty($_POST['adminPhone']) ? NULL : $_POST['adminPhone']);
 $adminEmail = (empty($_POST['adminEmail']) ? NULL : $_POST['adminEmail']);
 $grace = (empty($_POST['grace']) ? NULL : $_POST['grace']);
 $grandfathered = (empty($_POST['grandfathered']) ? NULL : $_POST['grandfathered']);
-$unRestrictedTime = (empty($_POST['unRestrictedTime']) ? NULL : $_POST['unRestrictedTime']);
+$unRestricted_Time = (empty($_POST['unRestricted_Time']) ? NULL : $_POST['unRestricted_Time']);
 $adjustLeave = (empty($_POST['adjustLeave']) ? NULL : $_POST['adjustLeave']);
 $overrideVacation = (empty($_POST['overrideVacation']) ? NULL : $_POST['overrideVacation']);
 $autoPopulation_Time = (empty($_POST['autoPopulation_Time']) ? NULL : $_POST['autoPopulation_Time']);
@@ -25,22 +25,25 @@ $employeeID = (empty($_POST['employeeID']) ? NULL : $_POST['employeeID']);
 $employeeManagementGroup = (empty($_POST['employeeManagementGroup']) ? NULL : $_POST['employeeManagementGroup']);
 $ucsfEmployee = (empty($_POST['ucsfEmployee']) ? NULL : $_POST['ucsfEmployee']);
 $bargainingUnit = (empty($_POST['bargainingUnit']) ? NULL : $_POST['bargainingUnit']);
-$AdjustTypeVac = (empty($_POST['AdjustTypeVac']) ? NULL : $_POST['AdjustTypeVac']);
 
+$AdjustTypeVac = (empty($_POST['AdjustTypeVac']) ? NULL : $_POST['AdjustTypeVac']);
 $AdjDateVac = (empty($_POST['AdjDateVac']) ? NULL : $_POST['AdjDateVac']);
 $AdjHoursVac = (empty($_POST['AdjHoursVac']) ? NULL : $_POST['AdjHoursVac']);
 $AdjustReasonVac = (empty($_POST['AdjustReasonVac']) ? NULL : $_POST['AdjustReasonVac']);
 $AdjVac = (empty($_POST['AdjVac']) ? NULL : $_POST['AdjVac']);
+
 $AdjustTypeSick = (empty($_POST['AdjustTypeSick']) ? NULL : $_POST['AdjustTypeSick']);
 $AdjDateSick = (empty($_POST['AdjDateSick']) ? NULL : $_POST['AdjDateSick']);
 $AdjHoursSick = (empty($_POST['AdjHoursSick']) ? NULL : $_POST['AdjHoursSick']);
 $AdjustReasonSick = (empty($_POST['AdjustReasonSick']) ? NULL : $_POST['AdjustReasonSick']);
 $AdjSick = (empty($_POST['AdjSick']) ? NULL : $_POST['AdjSick']);
-$AdjustCompTime = (empty($_POST['AdjustCompTime']) ? NULL : $_POST['AdjustCompTime']);
+
+$AdjustTypeCompTime = (empty($_POST['AdjustTypeCompTime']) ? NULL : $_POST['AdjustTypeCompTime']);
 $AdjDateCompTime = (empty($_POST['AdjDateCompTime']) ? NULL : $_POST['AdjDateCompTime']);
 $AdjHoursCompTime = (empty($_POST['AdjHoursCompTime']) ? NULL : $_POST['AdjHoursCompTime']);
 $AdjustReasonCompTime = (empty($_POST['AdjustReasonCompTime']) ? NULL : $_POST['AdjustReasonCompTime']);
 $AdjCompTime = (empty($_POST['AdjCompTime']) ? NULL : $_POST['AdjCompTime']);
+
 $monthsService = (empty($_POST['monthsService']) ? NULL : $_POST['monthsService']);
 $monthsServiceEffectiveDate = (empty($_POST['monthsServiceEffectiveDate']) ? NULL : $_POST['monthsServiceEffectiveDate']);
 
@@ -57,11 +60,7 @@ $unResTimeRequest = (empty($_POST['unResTimeRequest']) ? NULL : $_POST['unResTim
 $autoPopTimeRequest = (empty($_POST['autoPopTimeRequest']) ? NULL : $_POST['autoPopTimeRequest']);
 $comments = (empty($_POST['comments']) ? NULL : $_POST['comments']);
 
-
-
-
 $validate = (empty($_POST['validate']) ? FALSE : $_POST['validate']);
-
 
 if ($validate !== FALSE) {
     $subject = "HBS Employee Update for " . $employeeName . " submitted by " . $adminName;
@@ -107,6 +106,16 @@ if ($validate !== FALSE) {
         $detail = $detail . "Reason: " . $AdjustReasonSick . "\n";
     }
 
+    if (!empty($AdjCompTime)) {
+        $detail = $detail . "----------------------------\n\n";
+        $detail = $detail . "Adjust Comp Time Balances \n";
+        $detail = $detail . $AdjCompTime . "\n";
+        $detail = $detail . $AdjustTypeCompTime . "\n";
+        $detail = $detail . "Effective Date: " . $AdjDateCompTime . "\n";
+        $detail = $detail . "Number of Hours: " . $AdjHoursCompTime . "\n";
+        $detail = $detail . "Reason: " . $AdjustReasonCompTime . "\n";
+    }
+
     if (!empty($adjustMonths)) {
         // Adjust Months data
         $detail = $detail . "----------------------------\n\n";
@@ -129,6 +138,7 @@ if ($validate !== FALSE) {
         $detail = $detail . "----------------------------\n\n";
         $detail = $detail . "Assign/Remove Non-Exempt Unrestricted Timesheet  \n";
         $detail = $detail . "Request :" . $unResTimeRequest . "\n";
+        $subject = "HBS - Update Timesheet";
     }
 
     if (!empty($autoPopulation_Time)) {
@@ -138,7 +148,7 @@ if ($validate !== FALSE) {
         $detail = $detail . "Request :" . $autoPopTimeRequest . "\n";
     }
 
-    if (!empty($overrideVaction)) {
+    if (!empty($overrideVacation)) {
         // Over Ride Vacation data
         $detail = $detail . "----------------------------\n\n";
         $detail = $detail . "Override Vacation Eligibility \n";
@@ -181,12 +191,8 @@ include 'include/header.php'
 <title>HBS Update</title>
 <?php if ($validate === FALSE) { ?>
     <div class="row row--demo">
-<<<<<<< HEAD
-        <h2>HBS Update Form</h2>
-=======
         <a href="index.php"><h4>UCSF Help Applications</h4></a>
-        <h2>Campus HBS Update Form</h2>
->>>>>>> d2f0dc0a6f1d93f56db5b701ba9f32c26cc121b8
+        <h2>HBS Update Form</h2>
 
         <noscript>
         <p>&nbsp;</p>
@@ -219,7 +225,7 @@ include 'include/header.php'
                 $("#grandfathered").click(function () {
                     $("#D").toggle();
                 });
-                $("#overrideVaction").click(function () {
+                $("#overrideVacation").click(function () {
                     $("#E").toggle();
                 });
                 $("#changeManagement").click(function () {
@@ -307,7 +313,7 @@ include 'include/header.php'
                 <!--[if lt IE 10]><span id="four"><![endif]-->
                 <div class="columns three three--phone">
                     <label class="label-checkbox">
-                        <input name="overrideVaction" type="checkbox" id="overrideVaction" value="true"/>E. Override Vacation Eligibility
+                        <input name="overrideVacation" type="checkbox" id="overrideVacation" value="true"/>E. Override Vacation Eligibility
                     </label>
                 </div>
                 <!--[if lt IE 10]></span><![endif]-->
@@ -500,7 +506,7 @@ include 'include/header.php'
                     <!--[if lt IE 10]></span><![endif]-->
                     <!--[if lt IE 10]><span id="six"><![endif]-->
                     <div class="columns two two--phone">
-                        <select name="AdjustCompTime" id="AdjustCompTime">
+                        <select name="AdjustTypeCompTime" id="AdjustTypeCompTime">
                             <option value=""> -select- </option>
                             <option>Starting Balance</option>
                             <option>Current Balance</option>
