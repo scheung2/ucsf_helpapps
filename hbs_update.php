@@ -138,7 +138,7 @@ if ($validate !== FALSE) {
         $detail = $detail . "----------------------------\n\n";
         $detail = $detail . "Assign/Remove Non-Exempt Unrestricted Timesheet  \n";
         $detail = $detail . "Request: " . $unResTimeRequest . "\n";
-        $subject = "HBS - Update Timesheet for " . $employeeName . " submitted by " . $adminName;
+        $subject = "HBS Update Timesheet for " . $employeeName . " submitted by " . $adminName;
     }
 
     if (!empty($autoPopulation_Time)) {
@@ -205,6 +205,7 @@ include 'include/header.php'
         </noscript>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/parsley.min.js"></script>
         <script>
             $(document).ready(function () {
                 $('input:checkbox').prop('checked', false);
@@ -238,6 +239,9 @@ include 'include/header.php'
                     $("#H").toggle();
                 });
             });
+	    $(function () {
+  		$('#form1').parsley().on('field:validated', function() {}).on('form:submit', function() { return true; });
+	    });
         </script>
 
         <script type="text/JavaScript">
@@ -267,15 +271,15 @@ include 'include/header.php'
             }
         </script>
 
-        <form action="" method="post" name="form1" onSubmit="MM_validateForm('adminName', '', 'R', 'adminPhone', '', 'R', 'adminEmail', '', 'RisEmail', 'employeeName', '', 'R', 'employeeID', '', 'R', 'employeeManagementGroup', '', 'R', 'ucsfEmployee', '', 'R');
+        <form id="form1" action="" method="post" name="form1" onSubmit="MM_validateForm('adminName', '', 'R', 'adminPhone', '', 'R', 'adminEmail', '', 'RisEmail', 'employeeName', '', 'R', 'employeeID', '', 'R', 'employeeManagementGroup', '', 'R', 'ucsfEmployee', '', 'R');
                 return document.MM_returnValue">
             <div class="row row--demo">
                 <div class="columns twelve twelve--phone bold">HBS HR ADMIN INFORMATION</div>
             </div>
             <div class="row row--demo">
-                <!--[if lt IE 10]><span id="three"><![endif]--><div class="columns four four--phone">Name<input autofocus class="text-input" type="text" name="adminName"></div><!--[if lt IE 10]></span><![endif]-->
-                <!--[if lt IE 10]><span id="three"><![endif]--><div class="columns four four--phone">Phone #<input class="text-input" type="text" name="adminPhone"></div><!--[if lt IE 10]></span><![endif]-->
-                <!--[if lt IE 10]><span id="three"><![endif]--><div class="columns four four--phone">Email Address<input class="text-input" type="text" name="adminEmail"></div><!--[if lt IE 10]></span><![endif]-->
+                <!--[if lt IE 10]><span id="three"><![endif]--><div class="columns four four--phone">Name<input autofocus class="text-input" type="text" id='adminName' name="adminName" /></div><!--[if lt IE 10]></span><![endif]-->
+                <!--[if lt IE 10]><span id="three"><![endif]--><div class="columns four four--phone">Phone #<input class="text-input" type="text" id='adminPhone' name="adminPhone" data-parsley-pattern="/[(]?\d{3}[-.)]?[ ]?\d{3}[-.]?\d{4}\b/g" data-parsley-pattern-message="The phone number must be in a North American phone number type. " /></div><!--[if lt IE 10]></span><![endif]-->
+                <!--[if lt IE 10]><span id="three"><![endif]--><div class="columns four four--phone">Email Address<input class="text-input" type="text" id='adminEmail' name="adminEmail" /></div><!--[if lt IE 10]></span><![endif]-->
             </div>  
             <p>This form is used by the HBS HR Admin to request the following types of HBS updates for the specified employee:</p>
             <div class="row row--demo">
@@ -348,9 +352,9 @@ include 'include/header.php'
                 <div class="columns twelve twelve--phone bold">EMPLOYEE INFORMATION</div>
             </div>
             <div class="row row--demo">
-                <!--[if lt IE 10]><span id="three"><![endif]--><div class="columns four four--phone">Name<input class="text-input" type="text" name="employeeName"></div><!--[if lt IE 10]></span><![endif]-->
-                <!--[if lt IE 10]><span id="three"><![endif]--><div class="columns four four--phone">Employee ID #<input class="text-input" name="employeeID" type="text"></div><!--[if lt IE 10]></span><![endif]-->
-                <!--[if lt IE 10]><span id="three"><![endif]--><div class="columns four four--phone">Management Group #<input class="text-input" name="employeeManagementGroup" type="text" size="30"></div> <!--[if lt IE 10]></span><![endif]-->
+                <!--[if lt IE 10]><span id="three"><![endif]--><div class="columns four four--phone">Name<input class="text-input" type="text" id='employeeName' name="employeeName" /></div><!--[if lt IE 10]></span><![endif]-->
+                <!--[if lt IE 10]><span id="three"><![endif]--><div class="columns four four--phone">Employee ID #<input class="text-input" id='employeeID' name="employeeID" type="text" data-parsley-type="digits" data-parsley-length="[9,9]" data-parsley-length-message="The employee id must be 9 digits long" /></div><!--[if lt IE 10]></span><![endif]-->
+                <!--[if lt IE 10]><span id="three"><![endif]--><div class="columns four four--phone">Management Group #<input class="text-input" id='employeeManagementGroup' name="employeeManagementGroup" type="text" size="30" data-parsley-minlength="6" /></div> <!--[if lt IE 10]></span><![endif]-->
             </div>
             <div class="row row--demo">
                 <!--[if lt IE 10]><span id="three"><![endif]--><div class="columns four four--phone">Is this individual a UCSF Employee?</div><!--[if lt IE 10]></span><![endif]-->
@@ -358,14 +362,14 @@ include 'include/header.php'
                     <!--[if lt IE 10]><span id="three"><![endif]-->
                     <div class="columns four four--phone">
                         <label class="label-radio">
-                            <input name="ucsfEmployee" type="radio" value="UCSF Employee">Yes
+                            <input name="ucsfEmployee" type="radio" value="UCSF Employee" checked="checked" />Yes
                         </label>
                     </div>
                     <!--[if lt IE 10]></span><![endif]-->
                     <!--[if lt IE 10]><span id="three"><![endif]-->
                     <div class="columns four four--phone">
                         <label class="label-radio">
-                            <input name="ucsfEmployee" type="radio" value="Not a UCSF Employee">No
+                            <input name="ucsfEmployee" type="radio" value="Not a UCSF Employee" />No
                         </label>
                     </div>
                     <!--[if lt IE 10]></span><![endif]-->
@@ -700,7 +704,7 @@ include 'include/header.php'
             <div></div>
             <!--[if lt IE 10]></span><![endif]-->
             <!--[if lt IE 10]><span id="six"><![endif]-->
-            <div columns one one--phone><input class="btn btn--primary" type="submit" name="Submit" value="Submit Form"> </div>
+            <div columns one one--phone><input class="btn btn--primary" type="submit" id='submitButton' name="Submit" value="Submit Form"> </div>
             <!--[if lt IE 10]></span><![endif]-->
         </form>
     </div>
