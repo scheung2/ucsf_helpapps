@@ -130,15 +130,15 @@ if ($validate !== FALSE) {
         // grandfathered data
         $detail = $detail . "----------------------------\n\n";
         $detail = $detail . "End Grandfathered Status  \n";
-        $detail = $detail . "End Date :" . $dateEndGrandfathered . "\n";
+        $detail = $detail . "End Date: " . $dateEndGrandfathered . "\n";
     }
 
     if (!empty($unRestricted_Time)) {
         // unRestricted_Time data
         $detail = $detail . "----------------------------\n\n";
         $detail = $detail . "Assign/Remove Non-Exempt Unrestricted Timesheet  \n";
-        $detail = $detail . "Request :" . $unResTimeRequest . "\n";
-        $subject = "HBS - Update Timesheet";
+        $detail = $detail . "Request: " . $unResTimeRequest . "\n";
+        $subject = "HBS - Update Timesheet for " . $employeeName . " submitted by " . $adminName;
     }
 
     if (!empty($autoPopulation_Time)) {
@@ -655,8 +655,8 @@ include 'include/header.php'
                     <div class="columns eight eight--phone">
                         <select name="unResTimeRequest" id="unResTimeRequest">
                             <option value=""> -select- </option>
-                            <option>Eligible</option>
-                            <option>Ineligible</option>
+                            <option>Assign</option>
+                            <option>Remove</option>
                         </select>
                     </div>
                     <!--[if lt IE 10]></span><![endif]-->
